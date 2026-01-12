@@ -45,9 +45,9 @@ const arrayUsers = [
       }
 ];
 
-const DB_URL= process.env.DB_URL;
+const DB_URI= process.env.DB_URI;
 
-mongoose.connect(DB_URL)
+mongoose.connect(DB_URI)
 .then(async()=> {
     const allUsers = await User.find();
     if (allUsers.length > 0) {

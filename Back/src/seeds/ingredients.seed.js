@@ -355,9 +355,9 @@ const arrayIngredients =
 
 ]
 
-const DB_URL= process.env.DB_URL;
+const DB_URI= process.env.DB_URI;
 
-mongoose.connect(DB_URL)
+mongoose.connect(DB_URI)
 .then(async()=> {
     const allIngredients = await Ingredient.find();
     if (allIngredients.length > 0) {

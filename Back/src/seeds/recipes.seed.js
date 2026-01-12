@@ -8,7 +8,7 @@ const arrayRecipes =
     "name": "Galletas de Avena",
     "description": "Deliciosas galletas de avena ideales para un snack saludable.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d557191", "quantity": "1 taza" }
+      { "ingredient": "69654ac33339b6d4cedd7274", "quantity": "1 taza" }
     ],
     "preparations": [
       "Precalienta el horno a 180°C.",
@@ -23,7 +23,7 @@ const arrayRecipes =
     "categories": ["Recetas Fáciles", "Recetas para Niños"],
     "country": "Internacional",
     "comments": [],
-    "chef": ["64f0aecef7d5e7dbdc923c7c"],
+    "chef": ["69654acecc5c03fd79ec64f6"],
     "image": "https://www.gourmet.cl/wp-content/uploads/2017/08/Galletas-de-avena.jpg",
     "likes": 0
   },
@@ -31,8 +31,8 @@ const arrayRecipes =
     "name": "Ensalada de Manzana",
     "description": "Una ensalada refrescante con manzanas y nueces.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d557192", "quantity": "2 manzanas" },
-      { "ingredient": "64f1c05a310dc5167d557199", "quantity": "1 taza de nueces" }
+      { "ingredient": "69654ac33339b6d4cedd7275", "quantity": "2 manzanas" },
+      { "ingredient": "69654ac33339b6d4cedd727b", "quantity": "1 taza de nueces" }
     ],
     "preparations": [
       "Lava y corta las manzanas en trozos pequeños.",
@@ -42,7 +42,7 @@ const arrayRecipes =
     "categories": ["Ensaladas", "Recetas Saludables"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://badun.nestle.es/imgserver/v1/80/1290x742/ensalada-de-manzanas-y-nueces.jpg",
     "likes": 0
   },
@@ -50,11 +50,11 @@ const arrayRecipes =
     "name": "Salmón a la Parrilla",
     "description": "Salmón a la parrilla con limón y hierbas.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d557193", "quantity": "2 filetes de salmón" },
-      { "ingredient": "64f1c05a310dc5167d5571a1", "quantity": "1 limón, en rodajas" },
-      { "ingredient": "64f1c05a310dc5167d5571a2", "quantity": "2 zanahorias, en rodajas" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "3 dientes de ajo, picados" },
-      { "ingredient": "64f1c05a310dc5167d5571a4", "quantity": "1 pimiento verde, en tiras" }
+      { "ingredient": "69654ac33339b6d4cedd7276", "quantity": "2 filetes de salmón" },
+      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, en rodajas" },
+      { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "2 zanahorias, en rodajas" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "3 dientes de ajo, picados" },
+      { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "1 pimiento verde, en tiras" }
     ],
     "preparations": [
       "Precalienta la parrilla a fuego medio-alto.",
@@ -68,7 +68,7 @@ const arrayRecipes =
     "categories": ["Platos Principales", "Pescado"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://comeryrascar.com/wp-content/uploads/2022/06/salmon-a-la-parrilla.jpg",
     "likes": 0
   },
@@ -76,11 +76,11 @@ const arrayRecipes =
     "name": "Ensalada de Espinacas",
     "description": "Una ensalada fresca y saludable con espinacas frescas y aderezo de mostaza.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d557194", "quantity": "4 tazas de espinacas frescas" },
-      { "ingredient": "64f1c05a310dc5167d55719c", "quantity": "1/2 cebolla roja, en rodajas finas" },
-      { "ingredient": "64f1c05a310dc5167d5571a1", "quantity": "1 limón, el jugo" },
-      { "ingredient": "64f1c05a310dc5167d5571a2", "quantity": "1 zanahoria, rallada" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" }
+      { "ingredient": "69654ac33339b6d4cedd7277", "quantity": "4 tazas de espinacas frescas" },
+      { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1/2 cebolla roja, en rodajas finas" },
+      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
+      { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1 zanahoria, rallada" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" }
     ],
     "preparations": [
       "Lava las espinacas y escúrrelas bien.",
@@ -91,7 +91,7 @@ const arrayRecipes =
     "categories": ["Ensaladas", "Recetas Saludables"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://imag.bonviveur.com/ensalada-de-espinacas.jpg",
     "likes": 0
   },
@@ -99,11 +99,11 @@ const arrayRecipes =
     "name": "Huevos Revueltos",
     "description": "Huevos revueltos con queso y espinacas.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d557195", "quantity": "4 huevos" },
-      { "ingredient": "64f1c05a310dc5167d5571a4", "quantity": "50 g de pimiento verde, picado" },
-      { "ingredient": "64f1c05a310dc5167d55719e", "quantity": "2 cucharadas de aceite de oliva" },
-      { "ingredient": "64f1c05a310dc5167d5571a2", "quantity": "1 zanahoria, en rodajas" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" }
+      { "ingredient": "69654ac33339b6d4cedd7278", "quantity": "4 huevos" },
+      { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "50 g de pimiento verde, picado" },
+      { "ingredient": "69654ac33339b6d4cedd7281", "quantity": "2 cucharadas de aceite de oliva" },
+      { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1 zanahoria, en rodajas" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" }
     ],
     "preparations": [
       "En un tazón, bate los huevos y reserva.",
@@ -116,7 +116,7 @@ const arrayRecipes =
     "categories": ["Desayunos", "Platos Principales"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://unareceta.com/wp-content/uploads/2017/03/huevos-revueltos-americanos.jpg",
     "likes": 0
   },
@@ -124,11 +124,11 @@ const arrayRecipes =
     "name": "Ensalada de Quinua",
     "description": "Una ensalada nutritiva con quinua, verduras y aderezo de limón.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d557196", "quantity": "1 taza de quinua cocida" },
-      { "ingredient": "64f1c05a310dc5167d5571a1", "quantity": "1 limón, el jugo" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" },
-      { "ingredient": "64f1c05a310dc5167d5571a4", "quantity": "1 pimiento verde, picado" },
-      { "ingredient": "64f1c05a310dc5167d5571a2", "quantity": "1 zanahoria, rallada" }
+      { "ingredient": "69654ac33339b6d4cedd7279", "quantity": "1 taza de quinua cocida" },
+      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
+      { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "1 pimiento verde, picado" },
+      { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1 zanahoria, rallada" }
     ],
     "preparations": [
       "En un tazón grande, mezcla la quinua cocida, el jugo de limón y el ajo picado.",
@@ -138,7 +138,7 @@ const arrayRecipes =
     "categories": ["Ensaladas", "Recetas Saludables"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://www.goya.com/media/4003/quinoa-salad.jpg?quality=80",
     "likes": 0
   },
@@ -146,10 +146,10 @@ const arrayRecipes =
     "name": "Batido de Plátano y Nueces",
     "description": "Un batido rico y nutritivo con plátano y nueces.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d557197", "quantity": "2 plátanos maduros" },
-      { "ingredient": "64f1c05a310dc5167d557198", "quantity": "1 taza de nueces" },
-      { "ingredient": "64f1c05a310dc5167d5571a0", "quantity": "1 taza de leche" },
-      { "ingredient": "64f1c05a310dc5167d5571a1", "quantity": "1 limón, el jugo" }
+      { "ingredient": "69654ac33339b6d4cedd727a", "quantity": "2 plátanos maduros" },
+      { "ingredient": "69654ac33339b6d4cedd727b", "quantity": "1 taza de nueces" },
+      { "ingredient": "69654ac33339b6d4cedd7283", "quantity": "1 taza de leche" },
+      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" }
     ],
     "preparations": [
       "En una licuadora, combina los plátanos, las nueces, la leche y el jugo de limón.",
@@ -159,7 +159,7 @@ const arrayRecipes =
     "categories": ["Batidos", "Recetas Saludables"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://eresdeportista.com/wp-content/uploads/2022/04/iStock-1157804873.jpg",
     "likes": 0
   },
@@ -167,10 +167,10 @@ const arrayRecipes =
     "name": "Brócoli al Vapor",
     "description": "Brócoli al vapor con ajo y aceite de oliva.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d557199", "quantity": "1 taza de nueces" },
-      { "ingredient": "64f1c05a310dc5167d5571a2", "quantity": "1 zanahoria, en rodajas" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" },
-      { "ingredient": "64f1c05a310dc5167d5571a4", "quantity": "1 pimiento verde, en tiras" }
+      { "ingredient": "69654ac33339b6d4cedd727b", "quantity": "1 taza de nueces" },
+      { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1 zanahoria, en rodajas" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
+      { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "1 pimiento verde, en tiras" }
     ],
     "preparations": [
       "Lava y corta el brócoli en floretes.",
@@ -182,7 +182,7 @@ const arrayRecipes =
     "categories": ["Acompañamientos", "Vegetales"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://imag.bonviveur.com/brocoli-al-vapor-con-vinagreta-de-frutos-secos.jpg",
     "likes": 0
   },
@@ -190,11 +190,11 @@ const arrayRecipes =
     "name": "Pechuga de Pavo a la Parrilla",
     "description": "Pechuga de pavo a la parrilla con pimientos y cebolla.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d5571a0", "quantity": "2 pechugas de pavo" },
+      { "ingredient": "69654ac33339b6d4cedd7283", "quantity": "2 pechugas de pavo" },
       { "ingredient": "64f1c05a310dc5167d55719f", "quantity": "1 cebolla, en rodajas" },
-      { "ingredient": "64f1c05a310dc5167d5571a1", "quantity": "1 limón, el jugo" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" },
-      { "ingredient": "64f1c05a310dc5167d5571a4", "quantity": "1 pimiento verde, en tiras" }
+      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
+      { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "1 pimiento verde, en tiras" }
     ],
     "preparations": [
       "Precalienta la parrilla a fuego medio-alto.",
@@ -207,7 +207,7 @@ const arrayRecipes =
     "categories": ["Platos Principales", "Pavo"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://www.crushpixel.com/big-static14/preview4/grilled-turkey-breast-with-parsley-1794647.jpg",
     "likes": 0
   },
@@ -215,10 +215,10 @@ const arrayRecipes =
     "name": "Ensalada de Pimiento Rojo",
     "description": "Una ensalada colorida con pimiento rojo y aguacate.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d5571a1", "quantity": "2 pimientos rojos, en tiras" },
-      { "ingredient": "64f1c05a310dc5167d55719d", "quantity": "1 cebolla, en rodajas finas" },
-      { "ingredient": "64f1c05a310dc5167d557197", "quantity": "1 plátano, en rodajas" },
-      { "ingredient": "64f1c05a310dc5167d55719e", "quantity": "2 cucharadas de aceite de oliva" }
+      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "2 pimientos rojos, en tiras" },
+      { "ingredient": "69654ac33339b6d4cedd727f", "quantity": "1 cebolla, en rodajas finas" },
+      { "ingredient": "69654ac33339b6d4cedd727a", "quantity": "1 plátano, en rodajas" },
+      { "ingredient": "69654ac33339b6d4cedd7281", "quantity": "2 cucharadas de aceite de oliva" }
     ],
     "preparations": [
       "En un tazón grande, mezcla las tiras de pimiento rojo, la cebolla en rodajas y las rodajas de plátano.",
@@ -228,7 +228,7 @@ const arrayRecipes =
     "categories": ["Ensaladas", "Vegetales"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://recetasdecocina.elmundo.es/wp-content/uploads/2016/10/ensalada-de-pimientos-asados.jpg",
     "likes": 0
   },
@@ -236,10 +236,10 @@ const arrayRecipes =
     "name": "Salsa de Tomate Casera",
     "description": "Una deliciosa salsa de tomate casera para pasta y pizzas.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d5571a0", "quantity": "8 tomates maduros" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "3 dientes de ajo, picados" },
-      { "ingredient": "64f1c05a310dc5167d5571a4", "quantity": "1 pimiento verde, picado" },
-      { "ingredient": "64f1c05a310dc5167d557199", "quantity": "1 taza de nueces" }
+      { "ingredient": "69654ac33339b6d4cedd7283", "quantity": "8 tomates maduros" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "3 dientes de ajo, picados" },
+      { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "1 pimiento verde, picado" },
+      { "ingredient": "69654ac33339b6d4cedd727b", "quantity": "1 taza de nueces" }
     ],
     "preparations": [
       "Lava y corta los tomates en cubos.",
@@ -251,7 +251,7 @@ const arrayRecipes =
     "categories": ["Salsas", "Recetas Italianas"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://static.onecms.io/wp-content/uploads/sites/21/2016/10/29/salsa-casera-de-tomate-para-pasta-2000.jpg",
     "likes": 0
   },
@@ -259,10 +259,10 @@ const arrayRecipes =
     "name": "Sopa de Zanahoria",
     "description": "Una sopa cremosa de zanahoria con un toque de jengibre.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d55719c", "quantity": "4 zanahorias, en rodajas" },
-      { "ingredient": "64f1c05a310dc5167d5571a1", "quantity": "1 limón, el jugo" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" },
-      { "ingredient": "64f1c05a310dc5167d5571a4", "quantity": "1 pimiento verde, picado" }
+      { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "4 zanahorias, en rodajas" },
+      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
+      { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "1 pimiento verde, picado" }
     ],
     "preparations": [
       "En una olla grande, calienta el aceite de oliva a fuego medio-alto.",
@@ -277,7 +277,7 @@ const arrayRecipes =
     "categories": ["Sopas", "Recetas Saludables"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://s3.abcstatics.com/media/gurmesevilla/2009/07/437_cremazanahoria_1252493037.jpg",
     "likes": 0
   },
@@ -285,11 +285,11 @@ const arrayRecipes =
     "name": "Tostadas de Aguacate",
     "description": "Tostadas de aguacate con huevo y tomate.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d55719d", "quantity": "4 tostadas de pan integral" },
-      { "ingredient": "64f1c05a310dc5167d5571a5", "quantity": "2 aguacates maduros" },
-      { "ingredient": "64f1c05a310dc5167d5571a1", "quantity": "1 limón, el jugo" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" },
-      { "ingredient": "64f1c05a310dc5167d5571a4", "quantity": "1 pimiento verde, en tiras" }
+      { "ingredient": "69654ac33339b6d4cedd727f", "quantity": "4 tostadas de pan integral" },
+      { "ingredient": "69654ac33339b6d4cedd728b", "quantity": "2 aguacates maduros" },
+      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
+      { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "1 pimiento verde, en tiras" }
     ],
     "preparations": [
       "Tuesta las tostadas de pan integral en una tostadora.",
@@ -301,7 +301,7 @@ const arrayRecipes =
     "categories": ["Desayunos", "Aperitivos"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/9095F1E1-5407-4953-9228-49AC7AAA8288/Derivates/b183ba61-d10f-4b04-85a6-22a056371b7b.jpg",
     "likes": 0
   },
@@ -309,9 +309,9 @@ const arrayRecipes =
     "name": "Pasta con Pesto",
     "description": "Pasta con salsa de pesto fresca y queso parmesano.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d5571a0", "quantity": "250 g de pasta" },
-      { "ingredient": "64f1c05a310dc5167d5571a6", "quantity": "2 tazas de albahaca fresca" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" },
+      { "ingredient": "69654ac33339b6d4cedd7283", "quantity": "250 g de pasta" },
+      { "ingredient": "69654ac33339b6d4cedd728c", "quantity": "2 tazas de albahaca fresca" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
       { "ingredient": "64f1c05a310dc5167d5571a7", "quantity": "1/2 taza de queso parmesano rallado" }
     ],
     "preparations": [
@@ -323,7 +323,7 @@ const arrayRecipes =
     "categories": ["Pastas", "Recetas Italianas"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2020/05/29/5ed11fb61d750.jpeg",
     "likes": 0
   },
@@ -344,7 +344,7 @@ const arrayRecipes =
     "categories": ["Batidos", "Recetas Saludables"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://saposyprincesas.elmundo.es/wp-content/uploads/2017/05/smoothies-2253423_960_720.jpg",
     "likes": 0
   },
@@ -352,9 +352,9 @@ const arrayRecipes =
     "name": "Pollo al Curry",
     "description": "Pollo al curry con arroz y verduras.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d5571ac", "quantity": "4 pechugas de pollo" },
+      { "ingredient": "69654ac33339b6d4cedd7282", "quantity": "4 pechugas de pollo" },
       { "ingredient": "64f1c05a310dc5167d5571ad", "quantity": "1 cebolla, picada" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" },
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
       { "ingredient": "64f1c05a310dc5167d5571ae", "quantity": "1 taza de arroz" },
       { "ingredient": "64f1c05a310dc5167d5571af", "quantity": "1 lata de leche de coco" }
     ],
@@ -369,7 +369,7 @@ const arrayRecipes =
     "categories": ["Platos Principales", "Pollo"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://i.blogs.es/9ea7a4/pollo_curry-copia/650_1200.jpg",
     "likes": 0
   },
@@ -377,10 +377,10 @@ const arrayRecipes =
     "name": "Pasta Alfredo",
     "description": "Pasta Alfredo cremosa con queso parmesano.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d5571a0", "quantity": "250 g de pasta" },
+      { "ingredient": "69654ac33339b6d4cedd7283", "quantity": "250 g de pasta" },
       { "ingredient": "64f1c05a310dc5167d5571b0", "quantity": "1 taza de queso parmesano rallado" },
       { "ingredient": "64f1c05a310dc5167d5571b1", "quantity": "1 taza de crema espesa" },
-      { "ingredient": "64f1c05a310dc5167d5571a3", "quantity": "2 dientes de ajo, picados" }
+      { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" }
     ],
     "preparations": [
       "Cocina la pasta según las instrucciones del paquete hasta que esté al dente.",
@@ -393,7 +393,7 @@ const arrayRecipes =
     "categories": ["Pastas", "Recetas Italianas"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://recetasdecocina.elmundo.es/wp-content/uploads/2021/06/pasta-alfredo.jpg",
     "likes": 0
   },
@@ -402,9 +402,9 @@ const arrayRecipes =
     "description": "Ensalada César clásica con pollo a la parrilla.",
     "ingredients": [
       { "ingredient": "64f1c05a310dc5167d5571b2", "quantity": "2 pechugas de pollo" },
-      { "ingredient": "64f1c05a310dc5167d5571a2", "quantity": "1 zanahoria, en rodajas" },
+      { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1 zanahoria, en rodajas" },
       { "ingredient": "64f1c05a310dc5167d5571b3", "quantity": "2 tazas de lechuga romana, cortada en trozos" },
-      { "ingredient": "64f1c05a310dc5167d5571a1", "quantity": "1 limón, el jugo" },
+      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
       { "ingredient": "64f1c05a310dc5167d5571b4", "quantity": "1/2 taza de crutones" }
     ],
     "preparations": [
@@ -418,15 +418,15 @@ const arrayRecipes =
     "categories": ["Ensaladas", "Pollo"],
     "country": "Internacional",
     "comments": [],
-    "chef": "64f0aecef7d5e7dbdc923c7c",
+    "chef": "69654acecc5c03fd79ec64f6",
     "image": "https://comeryrascar.com/wp-content/uploads/2022/02/175_1.jpg",
     "likes": 0
   }
 ]
 
-const DB_URL = process.env.DB_URL;
+const DB_URI = process.env.DB_URI;
 
-mongoose.connect(DB_URL)
+mongoose.connect(DB_URI)
   .then(async () => {
     const allRecipes = await Recipe.find();
     if (allRecipes.length > 0) {
