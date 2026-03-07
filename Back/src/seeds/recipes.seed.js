@@ -24,7 +24,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": ["69654acecc5c03fd79ec64f6"],
-    "image": "https://www.gourmet.cl/wp-content/uploads/2017/08/Galletas-de-avena.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772817868/recetas/galletas-de-avena_b6cj9o.jpg",
     "likes": 0
   },
   {
@@ -43,7 +43,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://badun.nestle.es/imgserver/v1/80/1290x742/ensalada-de-manzanas-y-nueces.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897947/recetas/ensalada-manzana_p3dwfc.png",
     "likes": 0
   },
   {
@@ -69,7 +69,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://comeryrascar.com/wp-content/uploads/2022/06/salmon-a-la-parrilla.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897953/recetas/salmon_f6qodh.png",
     "likes": 0
   },
   {
@@ -92,7 +92,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://imag.bonviveur.com/ensalada-de-espinacas.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897947/recetas/ensalada-espinacas_szqz4h.jpg",
     "likes": 0
   },
   {
@@ -117,29 +117,29 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://unareceta.com/wp-content/uploads/2017/03/huevos-revueltos-americanos.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897949/recetas/huevos-revuektis_qktcgh.png",
     "likes": 0
   },
   {
-    "name": "Ensalada de Quinua",
-    "description": "Una ensalada nutritiva con quinua, verduras y aderezo de limón.",
+    "name": "Ensalada de Quinoa",
+    "description": "Una ensalada nutritiva con quinoa, verduras y aderezo de limón.",
     "ingredients": [
-      { "ingredient": "69654ac33339b6d4cedd7279", "quantity": "1 taza de quinua cocida" },
+      { "ingredient": "69654ac33339b6d4cedd7279", "quantity": "1 taza de quinoa cocida" },
       { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
       { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
       { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "1 pimiento verde, picado" },
       { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1 zanahoria, rallada" }
     ],
     "preparations": [
-      "En un tazón grande, mezcla la quinua cocida, el jugo de limón y el ajo picado.",
-      "Añade el pimiento verde picado y la zanahoria rallada a la quinua y mezcla bien.",
-      "Sirve la ensalada de quinua con aderezo de limón y disfruta."
+      "En un tazón grande, mezcla la quinoa cocida, el jugo de limón y el ajo picado.",
+      "Añade el pimiento verde picado y la zanahoria rallada a la quinoa y mezcla bien.",
+      "Sirve la ensalada de quinoa con aderezo de limón y disfruta."
     ],
     "categories": ["Ensaladas", "Recetas Saludables"],
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://www.goya.com/media/4003/quinoa-salad.jpg?quality=80",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897948/recetas/ensalada-quinoa_mlomde.png",
     "likes": 0
   },
   {
@@ -160,7 +160,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://eresdeportista.com/wp-content/uploads/2022/04/iStock-1157804873.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897945/recetas/batido-platano_agrtt1.png",
     "likes": 0
   },
   {
@@ -182,8 +182,8 @@ const arrayRecipes =
     "categories": ["Acompañamientos", "Vegetales"],
     "country": "Internacional",
     "comments": [],
-    "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://imag.bonviveur.com/brocoli-al-vapor-con-vinagreta-de-frutos-secos.jpg",
+    "chef": "69654acecc5c03fd79ec64f7",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897947/recetas/brocoli_yxqvhl.jpg",
     "likes": 0
   },
   {
@@ -208,7 +208,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://www.crushpixel.com/big-static14/preview4/grilled-turkey-breast-with-parsley-1794647.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897951/recetas/pechuga-pavo_aimgmv.png",
     "likes": 0
   },
   {
@@ -229,7 +229,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://recetasdecocina.elmundo.es/wp-content/uploads/2016/10/ensalada-de-pimientos-asados.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897948/recetas/ensalada-pimiento_ogvooj.png",
     "likes": 0
   },
   {
@@ -252,7 +252,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://static.onecms.io/wp-content/uploads/sites/21/2016/10/29/salsa-casera-de-tomate-para-pasta-2000.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897954/recetas/salsa-tomate_o2ktcd.png",
     "likes": 0
   },
   {
@@ -278,7 +278,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://s3.abcstatics.com/media/gurmesevilla/2009/07/437_cremazanahoria_1252493037.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897958/recetas/sopa-zanahoria_swtcz8.jpg",
     "likes": 0
   },
   {
@@ -301,8 +301,8 @@ const arrayRecipes =
     "categories": ["Desayunos", "Aperitivos"],
     "country": "Internacional",
     "comments": [],
-    "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/9095F1E1-5407-4953-9228-49AC7AAA8288/Derivates/b183ba61-d10f-4b04-85a6-22a056371b7b.jpg",
+    "chef": "69654acecc5c03fd79ec64f7",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897957/recetas/tostadas-aguacate_w1mufa.png",
     "likes": 0
   },
   {
@@ -324,7 +324,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2020/05/29/5ed11fb61d750.jpeg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897951/recetas/pasta-pesto_nij34o.png",
     "likes": 0
   },
   {
@@ -345,7 +345,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://saposyprincesas.elmundo.es/wp-content/uploads/2017/05/smoothies-2253423_960_720.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897955/recetas/smoothie-frutas_cofqep.png",
     "likes": 0
   },
   {
@@ -370,7 +370,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://i.blogs.es/9ea7a4/pollo_curry-copia/650_1200.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897952/recetas/pollo-curry_mqt9fq.jpg",
     "likes": 0
   },
   {
@@ -394,7 +394,7 @@ const arrayRecipes =
     "country": "Internacional",
     "comments": [],
     "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://recetasdecocina.elmundo.es/wp-content/uploads/2021/06/pasta-alfredo.jpg",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897950/recetas/pasta-alfredo_m2ludz.png",
     "likes": 0
   },
   {
@@ -418,8 +418,8 @@ const arrayRecipes =
     "categories": ["Ensaladas", "Pollo"],
     "country": "Internacional",
     "comments": [],
-    "chef": "69654acecc5c03fd79ec64f6",
-    "image": "https://comeryrascar.com/wp-content/uploads/2022/02/175_1.jpg",
+    "chef": "69654acecc5c03fd79ec64f7",
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772897946/recetas/ensalada-cesar_a8rj05.jpg",
     "likes": 0
   }
 ]

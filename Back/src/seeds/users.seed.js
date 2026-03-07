@@ -4,22 +4,22 @@ const dotenv = require('dotenv').config();
 
 const arrayUsers = [
     {
-        "name": "Admin1",
+        "name": "Chef Jorge",
         "role": "admin",
         "email": "admin1@admin.com",
         "age": "50",
         "password": "admin1123,",
-        "image": "admin1.jpg",
+        "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772900518/recetas/chef1_qqneck.png",
         "recipes": [],
         "comments": []
       },
       {
-        "name": "Admin2",
+        "name": "Chef Ana",
         "role": "admin",
         "email": "admin2@admin.com",
         "age": "40",
         "password": "admin2123,",
-        "image": "admin2.jpg",
+        "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772900736/recetas/chef2_dwyr3o.png",
         "recipes": [],
         "comments": []
       },
