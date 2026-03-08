@@ -7,350 +7,350 @@ const arrayIngredients =
     {
       "name": "Avena",
       "description": "La avena es un grano saludable y versátil, rico en fibra y nutrientes esenciales.",
-      "category": "Cereal",
+      "category": "Cereales",
       "energeticValue": "389 kcal",
       "totalFat": "6.9 g",
       "saturatedFat": "1.2 g",
       "carbs": "67.7 g",
       "sugars": "0.99 g",
       "sodium": "0.01 g",
-      "image": "https://www.recetasnestlecam.com/sites/default/files/styles/crop_article_banner_desktop_nes/public/2022-04/avena.jpg.jpg?itok=SgCou3hU"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973974/recetas/ingredientes/avena_fuaii0.png"
     },
     {
       "name": "Manzana",
       "description": "La manzana es una fruta deliciosa y nutritiva, rica en fibra y antioxidantes.",
-      "category": "Fruit",
+      "category": "Fruta",
       "energeticValue": "52 kcal",
       "totalFat": "0.2 g",
       "saturatedFat": "0.03 g",
       "carbs": "14 g",
       "sugars": "10 g",
       "sodium": "0.01 g",
-      "image": "https://www.bupasalud.com/sites/default/files/inline-images/fuji-red.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973987/recetas/ingredientes/manzana_u5ihlu.png"
     },
     {
       "name": "Salmón",
       "description": "El salmón es un pescado rico en ácidos grasos omega-3 y proteínas de alta calidad.",
-      "category": "Fish",
+      "category": "Pescado",
       "energeticValue": "206 kcal",
       "totalFat": "13.4 g",
       "saturatedFat": "3.1 g",
       "carbs": "0 g",
       "sugars": "0 g",
       "sodium": "0.06 g",
-      "image": "https://www.cucinare.tv/wp-content/uploads/2020/06/Salm%C3%B3n-rosado.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772974004/recetas/ingredientes/salm%C3%B3n_kssxtf.png"
     },
     {
       "name": "Espinacas",
       "description": "Las espinacas son una verdura de hojas verdes cargada de hierro y vitaminas.",
-      "category": "Vegetable",
+      "category": "Vegetales",
       "energeticValue": "23 kcal",
       "totalFat": "0.4 g",
       "saturatedFat": "0.1 g",
       "carbs": "3.6 g",
       "sugars": "0.4 g",
       "sodium": "0.08 g",
-      "image": "https://i.blogs.es/5ee30a/istock-522189977/1366_2000.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973981/recetas/ingredientes/espinacas_j8kavh.png"
     },
     {
       "name": "Huevo",
       "description": "El huevo es una fuente de proteínas de alta calidad y varios nutrientes esenciales.",
-      "category": "Meat",
+      "category": "Otros",
       "energeticValue": "155 kcal",
       "totalFat": "10.6 g",
       "saturatedFat": "3.3 g",
       "carbs": "1.1 g",
       "sugars": "1.1 g",
       "sodium": "0.13 g",
-      "image": "https://imagenes.lainformacion.com/files/og_thumbnail_1900/uploads/imagenes/2022/10/14/huevos.jpeg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973983/recetas/ingredientes/huevo_tbyuqi.png"
     },
     {
-      "name": "Quinua",
-      "description": "La quinua es un superalimento rico en proteínas, fibra y minerales.",
-      "category": "Cereal",
+      "name": "Quinoa",
+      "description": "La quinoa es un superalimento rico en proteínas, fibra y minerales.",
+      "category": "Cereales",
       "energeticValue": "120 kcal",
       "totalFat": "1.9 g",
       "saturatedFat": "0.2 g",
       "carbs": "21.3 g",
       "sugars": "0.9 g",
       "sodium": "0.02 g",
-      "image": "https://www.eltiempo.com/files/image_640_428/files/crop/uploads/2017/09/27/59cc1bf0bfd1d.r_1643808073234.0-390-2451-1614.jpeg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772974003/recetas/ingredientes/quinoa_rkzqzw.png"
     },
     {
       "name": "Plátano",
       "description": "El plátano es una fruta energética y rica en potasio, vitaminas y fibra.",
-      "category": "Fruit",
+      "category": "Fruta",
       "energeticValue": "89 kcal",
       "totalFat": "0.3 g",
       "saturatedFat": "0.1 g",
       "carbs": "23 g",
       "sugars": "12 g",
       "sodium": "0.01 g",
-      "image": "https://s2.abcstatics.com/media/bienestar/2023/04/17/platano-beneficios-1-kVAG--620x349@abc.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772974000/recetas/ingredientes/pl%C3%A1tano_ls4xq9.png"
     },
     {
       "name": "Nueces",
       "description": "Las nueces son frutos secos llenos de grasas saludables, proteínas y antioxidantes.",
-      "category": "Fruit",
+      "category": "Frutos secos",
       "energeticValue": "654 kcal",
       "totalFat": "65.2 g",
       "saturatedFat": "6.1 g",
       "carbs": "13.7 g",
       "sugars": "2.6 g",
       "sodium": "0.01 g",
-      "image": "https://www.adelgar.es/wp-content/uploads/2017/01/nueces-1.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973989/recetas/ingredientes/nueces_c6mg5j.png"
     },
     {
       "name": "Brócoli",
       "description": "El brócoli es una verdura crucífera llena de vitaminas y antioxidantes.",
-      "category": "Vegetable",
+      "category": "Vegetales",
       "energeticValue": "34 kcal",
       "totalFat": "0.6 g",
       "saturatedFat": "0.1 g",
       "carbs": "6.6 g",
       "sugars": "1.5 g",
       "sodium": "0.33 g",
-      "image": "https://s2.abcstatics.com/media/bienestar/2020/09/22/brocoli-1-kTsD--620x349@abc.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973975/recetas/ingredientes/br%C3%B3coli_pdl7ou.png"
     },
     {
       "name": "Pavo",
       "description": "El pavo es una carne magra rica en proteínas y baja en grasa.",
-      "category": "Meat",
+      "category": "Carne",
       "energeticValue": "135 kcal",
       "totalFat": "1.1 g",
       "saturatedFat": "0.3 g",
       "carbs": "0 g",
       "sugars": "0 g",
       "sodium": "0.05 g",
-      "image": "https://www.elfinanciero.com.mx/resizer/pj7ftfo9ZE6CY_pxeXCnhM0T4iQ=/1440x810/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/QQ3RBX5JBZFODEVUCC36W4PGQU.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973992/recetas/ingredientes/pavo_hkfswu.png"
     },
     {
       "name": "Pimiento rojo",
       "description": "El pimiento rojo es una verdura sabrosa y llena de vitamina C.",
-      "category": "Vegetable",
+      "category": "Vegetales",
       "energeticValue": "31 kcal",
       "totalFat": "0.4 g",
       "saturatedFat": "0.1 g",
       "carbs": "7.2 g",
       "sugars": "4.2 g",
       "sodium": "1 mg",
-      "image": "https://fruittoday.com/wp-content/uploads/2023/03/es-bueno-comer-pimiento-rojo-e1679312898535.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973997/recetas/ingredientes/pimiento-rojo_mehtsf.png"
   },
   {
       "name": "Cebolla",
       "description": "La cebolla es un aromatizante esencial en muchas cocinas.",
-      "category": "Vegetable",
+      "category": "Vegetales",
       "energeticValue": "40 kcal",
       "totalFat": "0.1 g",
       "saturatedFat": "0 g",
       "carbs": "9.3 g",
       "sugars": "4.7 g",
       "sodium": "2 mg",
-      "image": "https://www.eltiempo.com/files/article_main_1200/uploads/2023/01/24/63d057f760eb7.jpeg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973978/recetas/ingredientes/cebolla_wnzyk3.png"
   },
   {
       "name": "Ajo",
       "description": "El ajo es una especia con un sabor fuerte y beneficios para la salud.",
-      "category": "Vegetables",
+      "category": "Vegetales",
       "energeticValue": "149 kcal",
       "totalFat": "0.5 g",
       "saturatedFat": "0.2 g",
       "carbs": "33.1 g",
       "sugars": "1 g",
       "sodium": "17 mg",
-      "image": "https://s1.eestatic.com/2019/12/12/como/jardineria-cocina-frutas_451466045_140320241_1706x960.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973973/recetas/ingredientes/ajo_xldch4.png"
   },
   {
       "name": "Aceite de oliva",
       "description": "El aceite de oliva es una grasa saludable ampliamente utilizada en la cocina mediterránea.",
-      "category": "Oil",
+      "category": "Aceites",
       "energeticValue": "884 kcal",
       "totalFat": "100 g",
       "saturatedFat": "14 g",
       "carbs": "0 g",
       "sugars": "0 g",
       "sodium": "2 mg",
-      "image": "https://www.semana.com/resizer/QNlsZErxavjU9rAPx9Uy8AbK_fc=/1920x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/QNFYBUKVGZA53LOJWLH4YAPZTY.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973972/recetas/ingredientes/aceite_de_oliva_c6w1c8.png"
   },
   {
       "name": "Pechuga de pollo",
       "description": "La pechuga de pollo es una fuente magra de proteína.",
-      "category": "Meat",
+      "category": "Carne",
       "energeticValue": "165 kcal",
       "totalFat": "3.6 g",
       "saturatedFat": "1 g",
       "carbs": "0 g",
       "sugars": "0 g",
       "sodium": "74 mg",
-      "image": "https://dietpremium.es/wp-content/uploads/2016/04/pechuga-entera-510x340.jpg"
+      "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973992/recetas/ingredientes/pechuga_de_pollo_eays0u.png"
   },
   {
     "name": "Tomate",
     "description": "El tomate es una fruta versátil y rica en vitamina C.",
-    "category": "Vegetable",
+    "category": "Vegetales",
     "energeticValue": "18 kcal",
     "totalFat": "0.2 g",
     "saturatedFat": "0 g",
     "carbs": "3.9 g",
     "sugars": "2.6 g",
     "sodium": "5 mg",
-    "image": "https://images.hola.com/imagenes/estar-bien/20230727236387/tomate-propiedades-saludables-dieta/1-286-101/tomate-t.jpg?tx=w_680"
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772974007/recetas/ingredientes/tomate_uvooha.png"
 },
 {
     "name": "Zanahoria",
     "description": "La zanahoria es una raíz dulce y crujiente llena de vitamina A.",
-    "category": "Vegetable",
+    "category": "Vegetales",
     "energeticValue": "41 kcal",
     "totalFat": "0.2 g",
     "saturatedFat": "0 g",
     "carbs": "10 g",
     "sugars": "4.7 g",
     "sodium": "69 mg",
-    "image": "https://img2.rtve.es/i/?w=1600&i=1653900605754.jpg"
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772974007/recetas/ingredientes/zanahoria_mn60z8.png"
 },
 {
     "name": "Limón",
     "description": "El limón es una fruta cítrica ácida utilizada para dar sabor y aroma.",
-    "category": "Fruit",
+    "category": "Fruta",
     "energeticValue": "29 kcal",
     "totalFat": "0.3 g",
     "saturatedFat": "0 g",
     "carbs": "9.3 g",
     "sugars": "2.5 g",
     "sodium": "2 mg",
-    "image": "https://estaticos-cdn.prensaiberica.es/clip/2374daff-c6ac-4e03-bc37-55ce3ecbe32b_16-9-discover-aspect-ratio_default_0.jpg"
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973985/recetas/ingredientes/lim%C3%B3n_yxtbth.png"
 },
 {
     "name": "Harina de trigo integral",
     "description": "La pasta de trigo integral es una opción más saludable que la pasta regular.",
-    "category": "Cereal",
+    "category": "Cereales",
     "energeticValue": "180 kcal",
     "totalFat": "1 g",
     "saturatedFat": "0.2 g",
     "carbs": "39 g",
     "sugars": "2 g",
     "sodium": "2 mg",
-    "image": "https://i.blogs.es/95d4c3/harina-trigo-tipos/1366_2000.jpg"
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973982/recetas/ingredientes/harina_de_tirgo_xfxbja.png"
 },
 {
     "name": "Pimiento verde",
     "description": "El pimiento verde es un vegetal crujiente y bajo en calorías.",
-    "category": "Vegetable",
+    "category": "Vegetales",
     "energeticValue": "20 kcal",
     "totalFat": "0.2 g",
     "saturatedFat": "0 g",
     "carbs": "4.6 g",
     "sugars": "2.4 g",
     "sodium": "2 mg",
-    "image": "https://www.nutricienta.com/imagenes/alimentos/alimento-nutricienta-pimiento-verde.jpg"
+    "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973998/recetas/ingredientes/pimiento-verde_s62lkt.png"
 },
 {
   "name": "Patatas",
   "description": "Las patatas son un vegetal versátil y abundante en carbohidratos.",
-  "category": "Vegetable",
+  "category": "Vegetales",
   "energeticValue": "77 kcal",
   "totalFat": "0.1 g",
   "saturatedFat": "0 g",
   "carbs": "17 g",
   "sugars": "1 g",
   "sodium": "6 mg",
-  "image": "https://img2.rtve.es/i/?w=1600&i=1680518975160.jpg"
+  "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973990/recetas/ingredientes/patatas_v4vh8p.png"
 },
 {
   "name": "Perejil",
   "description": "El perejil es una hierba aromática utilizada para realzar el sabor de los platos.",
-  "category": "Herb",
+  "category": "Especias",
   "energeticValue": "36 kcal",
   "totalFat": "0.8 g",
   "saturatedFat": "0.1 g",
   "carbs": "6.3 g",
   "sugars": "0.9 g",
   "sodium": "56 mg",
-  "image": "https://static.abc.es/media/bienestar/2021/11/24/perejil-kpgH--1200x630@abc.jpg"
+  "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973995/recetas/ingredientes/perejil_z56xo4.png"
 },
 {
   "name": "Calabacín",
   "description": "El calabacín es una verdura de sabor suave y textura tierna.",
-  "category": "Vegetable",
+  "category": "Vegetales",
   "energeticValue": "17 kcal",
   "totalFat": "0.3 g",
   "saturatedFat": "0.1 g",
   "carbs": "3.1 g",
   "sugars": "2.4 g",
   "sodium": "8 mg",
-  "image": "https://recetasdecocina.elmundo.es/wp-content/uploads/2022/04/calabacin.jpg"
+  "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973977/recetas/ingredientes/calabac%C3%ADn_vb6dne.png"
 },
 {
   "name": "Aguacate",
   "description": "El aguacate es una fruta cremosa y rica en grasas saludables.",
-  "category": "Fruit",
+  "category": "Fruta",
   "energeticValue": "160 kcal",
   "totalFat": "14.7 g",
   "saturatedFat": "2.1 g",
   "carbs": "8.5 g",
   "sugars": "0.2 g",
   "sodium": "7 mg",
-  "image": "https://s1.abcstatics.com/media/bienestar/2019/07/22/aguacate-ficha-k9O--620x349@abc.jpg"
+  "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973972/recetas/ingredientes/aguacate_uys9ri.png"
 },
 {
   "name": "Albahaca",
   "description": "La albahaca es una hierba aromática utilizada en la cocina italiana.",
-  "category": "Herbs",
+  "category": "Especias",
   "energeticValue": "23 kcal",
   "totalFat": "0.6 g",
   "saturatedFat": "0.1 g",
   "carbs": "2.7 g",
   "sugars": "0.3 g",
   "sodium": "4 mg",
-  "image": "https://s1.abcstatics.com/media/bienestar/2021/06/23/albahaca-kFFI--620x349@abc.jpg"
+  "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973974/recetas/ingredientes/albahaca_m5lelb.png"
 },
 {
   "name": "Judías verdes",
   "description": "Las judías verdes son un vegetal bajo en calorías y rico en fibra.",
-  "category": "Vegetable",
+  "category": "Vegetales",
   "energeticValue": "31 kcal",
   "totalFat": "0.2 g",
   "saturatedFat": "0 g",
   "carbs": "7.1 g",
   "sugars": "2.9 g",
   "sodium": "6 mg",
-  "image": "https://mercadoermitagana.com/wp-content/uploads/2021/09/judias-verdes.jpg"
+  "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973984/recetas/ingredientes/jud%C3%ADas_verdes_jkeb8v.png"
 },
 {
   "name": "Pimienta negra",
   "description": "La pimienta negra es una especia picante ampliamente utilizada en la cocina.",
-  "category": "Spice",
+  "category": "Especias",
   "energeticValue": "251 kcal",
   "totalFat": "3.3 g",
   "saturatedFat": "1 g",
   "carbs": "64 g",
   "sugars": "0.6 g",
   "sodium": "20 mg",
-  "image": "https://s3.abcstatics.com/media/bienestar/2022/01/22/pimienta-negra-kjQB--1248x698@abc.jpg"
+  "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973995/recetas/ingredientes/pimienta_negra_xuc7xm.png"
 },
 {
   "name": "Champiñones",
   "description": "Los champiñones son hongos suaves y versátiles utilizados en una variedad de platos.",
-  "category": "Fungus",
+  "category": "Hongos",
   "energeticValue": "22 kcal",
   "totalFat": "0.3 g",
   "saturatedFat": "0 g",
   "carbs": "3.3 g",
   "sugars": "1.7 g",
   "sodium": "5 mg",
-  "image": "https://recetasdecocina.elmundo.es/wp-content/uploads/2022/08/champinon.jpg"
+  "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772973979/recetas/ingredientes/champi%C3%B1ones_ec7h9b.png"
 },
 {
   "name": "Puerro",
   "description": "El puerro es una verdura de sabor suave y aroma similar a la cebolla.",
-  "category": "Vegetable",
+  "category": "Vegetales",
   "energeticValue": "61 kcal",
   "totalFat": "0.5 g",
   "saturatedFat": "0.1 g",
   "carbs": "14.9 g",
   "sugars": "3.9 g",
   "sodium": "20 mg",
-  "image": "https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/styles/article_1200_800_fallback/public/2022-01/puerro%C2%A9iStock.jpg?itok=KMoftZcx"
+  "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772974001/recetas/ingredientes/puerro_yctonx.png"
 }
 
 ]
