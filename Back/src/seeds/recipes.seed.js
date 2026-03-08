@@ -190,7 +190,7 @@ const arrayRecipes =
     "name": "Pechuga de Pavo a la Parrilla",
     "description": "Pechuga de pavo a la parrilla con pimientos y cebolla.",
     "ingredients": [
-      { "ingredient": "69654ac33339b6d4cedd7283", "quantity": "2 pechugas de pavo" },
+      { "ingredient": "69654ac33339b6d4cedd727d", "quantity": "2 pechugas de pavo" },
       { "ingredient": "64f1c05a310dc5167d55719f", "quantity": "1 cebolla, en rodajas" },
       { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
       { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
@@ -215,13 +215,13 @@ const arrayRecipes =
     "name": "Ensalada de Pimiento Rojo",
     "description": "Una ensalada colorida con pimiento rojo y aguacate.",
     "ingredients": [
-      { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "2 pimientos rojos, en tiras" },
+      { "ingredient": "69654ac33339b6d4cedd727e", "quantity": "2 pimientos rojos, en tiras" },
       { "ingredient": "69654ac33339b6d4cedd727f", "quantity": "1 cebolla, en rodajas finas" },
-      { "ingredient": "69654ac33339b6d4cedd727a", "quantity": "1 plátano, en rodajas" },
+      { "ingredient": "69654ac33339b6d4cedd728b", "quantity": "1 aguacate, en rodajas" },
       { "ingredient": "69654ac33339b6d4cedd7281", "quantity": "2 cucharadas de aceite de oliva" }
     ],
     "preparations": [
-      "En un tazón grande, mezcla las tiras de pimiento rojo, la cebolla en rodajas y las rodajas de plátano.",
+      "En un tazón grande, mezcla las tiras de pimiento rojo, la cebolla en rodajas y las rodajas de aguacate.",
       "Rocía con aceite de oliva y mezcla bien.",
       "Sirve la ensalada de pimiento rojo y aguacate y disfruta."
     ],
