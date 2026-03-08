@@ -47,7 +47,7 @@ function IngredientsDetailPage() {
             // console.log('1', recipeIngredient.ingredient.name)
             // console.log('2', item.data.name)
             // console.log('5', recipeIngredient.ingredient.name === item.data.name)
-            return recipeIngredient?.ingredient?.name === item?.data?.name;
+            return recipeIngredient?.ingredient?._id?.toString() === item?.data?._id?.toString();
             })
         });
 

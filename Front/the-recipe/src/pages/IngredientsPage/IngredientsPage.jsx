@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import FormCreateIngredient from "../../components/FormCreateIngredient/FormCreateIngredient";
 import CategorySlider from "../../components/CategorySlider/CategorySlider";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-
 import { useAuth } from "../../shared/AuthContext";
 import { makeStyles } from "@material-ui/core";
 
@@ -72,9 +64,6 @@ function IngredientsPage() {
         </div>
         <div className="ingredients-slider">
           <CategorySlider category="Carne" />
-        </div>
-        <div className="ingredients-slider">
-          <CategorySlider category="Aceites" />
         </div>
         <div className="ingredients-slider">
           <CategorySlider category="Especias" />
