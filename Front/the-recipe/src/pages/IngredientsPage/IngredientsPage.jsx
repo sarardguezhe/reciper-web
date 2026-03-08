@@ -62,22 +62,22 @@ function IngredientsPage() {
         )}
 
         <div className="ingredients-slider">
-          <CategorySlider category="Vegetable" />
+          <CategorySlider category="Vegetales" />
         </div>
         <div className="ingredients-slider">
-          <CategorySlider category="Fruit" />
+          <CategorySlider category="Fruta" />
         </div>
         <div className="ingredients-slider">
-          <CategorySlider category="Cereal" />
+          <CategorySlider category="Cereales" />
         </div>
         <div className="ingredients-slider">
-          <CategorySlider category="Meat" />
+          <CategorySlider category="Carne" />
         </div>
         <div className="ingredients-slider">
-          <CategorySlider category="Oil" />
+          <CategorySlider category="Aceites" />
         </div>
         <div className="ingredients-slider">
-          <CategorySlider category="Fungus" />
+          <CategorySlider category="Especias" />
         </div>
       </div>
 

@@ -52,7 +52,7 @@ export default function CategorySlider({ category }) {
       <div className="container px-5 pt-8 mx-auto">
           <div className="text-center">
             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-              {category}s
+              {category}
             </h1>
             <div className="flex mt-6 justify-center mb-16">
               <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
