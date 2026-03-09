@@ -4,31 +4,12 @@ import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/effect-creative";
-import { EffectCreative } from "swiper/modules";
+import 'swiper/css/navigation';
+import { Navigation } from "swiper/modules";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-
-
-
-const useStyles = makeStyles({
-    root: {
-      maxWidth: 600,
-    },
-    media: {
-      height: 140,
-    },
-  });
 
 export default function CategorySlider({ category }) {
-    const classes = useStyles();
+
   const [ingredients, setIngredients] = useState([]);
 
   const getIngredients = async () => {
@@ -58,59 +39,75 @@ export default function CategorySlider({ category }) {
               <div className="w-16 h-1 rounded-full bg-violet-500 inline-flex"></div>
             </div>
           </div>
-        </div>
-      <Swiper
-        style={{ maxWidth: '600px'}}
-        grabCursor={true}
-        effect={"creative"}
-        creativeEffect={{
-          prev: {
-            shadow: true,
-            translate: [0, 0, -400],
-          },
-          next: {
-            translate: ["100%", 0, 0],
-          },
-        }}
-        modules={[EffectCreative]}
-        className="mySwiper"
-      >
-        {ingredients?.map((ingredient) => (
-          <SwiperSlide>
-            <Link
-              to={`/ingredients/${ingredient._id}`}
-              className="object-contain shadow-xl"
-            >
-              <Card className={classes.root}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    image={ingredient.image}
-                    title="Contemplative Reptile"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {ingredient.name}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
-                    {ingredient.description}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    Detalles
-                  </Button>
-                </CardActions>
-              </Card>
-            </Link>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      </div>
+
+      <div className="relative">
+
+          <button className="custom-prev absolute left-24 top-1/2 -translate-y-1/4">
+            <img src="/icons8-arrow-60-l.png" alt="flecha izquierda"/>
+          </button>
+
+          <button className="custom-next absolute right-24 top-1/2 -translate-y-1/2">
+            <img src="/icons8-arrow-60-r.png" alt="flecha derecha"/>
+          </button>
+
+          <Swiper
+            className="p-10 h-[370px] max-w-5xl mx-auto"
+            grabCursor={true}
+            rewind={true}
+            slidesPerView={1}
+            breakpoints={{
+                768: { slidesPerView: 2 }, // Muestra 2 testimonios en pantallas medianas (md)
+                1024: { slidesPerView: 3 }, // Muestra 3 testimonios en pantallas grandes (lg)
+              }}
+            spaceBetween={30}
+            navigation={{
+                nextEl: ".custom-next",
+                prevEl: ".custom-prev",
+              }}
+            modules={[Navigation]}
+          >
+            {ingredients?.map((ingredient) => (
+              <SwiperSlide>
+                <Link
+                  to={`/ingredients/${ingredient._id}`}
+                  className="object-contain shadow-xl"
+                >
+                  <div className="h-[360px] max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                      
+                      {/* Imagen */}
+                      <div className="w-full h-44 overflow-hidden">
+                        <img
+                          src={ingredient.image}
+                          alt="Pimiento rojo"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+
+                      {/* Contenido */}
+                      <div className="p-6 flex flex-col flex-1">
+                        <h2 className="text-2xl font-semibold text-gray-800 mb-2 line-clamp-1">
+                          {ingredient.name}
+                        </h2>
+
+                        <p className="text-gray-500 mb-6 line-clamp-2">
+                          {ingredient.description}
+                        </p>
+
+                        <div className="mt-auto pt-4">
+                        <button className="text-violet-600 font-medium tracking-wide hover:text-violet-800 transition">
+                          DETALLES
+                        </button>
+                        </div>
+                      </div>
+
+                    </div>
+                </Link>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+      </div>
+
     </div>
   );
 }
