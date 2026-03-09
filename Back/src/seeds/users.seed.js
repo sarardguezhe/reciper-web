@@ -8,7 +8,7 @@ const arrayUsers = [
         "role": "admin",
         "email": "admin1@admin.com",
         "age": "50",
-        "password": "admin1123,",
+        "password": "Admin1123@",
         "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772900518/recetas/chef1_qqneck.png",
         "recipes": [],
         "comments": []
@@ -18,7 +18,7 @@ const arrayUsers = [
         "role": "admin",
         "email": "admin2@admin.com",
         "age": "40",
-        "password": "admin2123,",
+        "password": "Admin2123@",
         "image": "https://res.cloudinary.com/dnisd4vxs/image/upload/v1772900736/recetas/chef2_dwyr3o.png",
         "recipes": [],
         "comments": []
@@ -28,7 +28,7 @@ const arrayUsers = [
         "role": "user",
         "email": "user1@user.com",
         "age": "30",
-        "password": "user1123,",
+        "password": "User1123@",
         "image": "user1.jpg",
         "recipes": [],
         "comments": []
@@ -38,7 +38,7 @@ const arrayUsers = [
         "role": "user",
         "email": "user2@user.com",
         "age": "20",
-        "password": "user2123,",
+        "password": "User2123@",
         "image": "user2.jpg",
         "recipes": [],
         "comments": []

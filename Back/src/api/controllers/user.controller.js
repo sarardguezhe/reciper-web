@@ -13,13 +13,13 @@ const register = async (req, res) => {
   try {
     const newUser = new User(req.body);
     if (!validateEmail(newUser.email)) {
-      return res.status(400).json({ message: "Email invalid" });
+      return res.status(400).json({ message: "Email no válido" });
     }
     if (!validatePassword(newUser.password)) {
-      return res.status(400).json({ message: "Password invalid" });
+      return res.status(400).json({ message: "Contraseña no válida" });
     }
     if (await validateEmailDB(newUser.email)) {
-      return res.status(400).json({ message: "This email already exists" });
+      return res.status(400).json({ message: "Este email ya está registrado" });
     }
     console.log("All ok");
     newUser.password = bcrypt.hashSync(newUser.password, 15);
@@ -36,10 +36,10 @@ const login = async (req, res) => {
     const userInfo = await User.findOne({ email: req.body.email });
     console.log("userinfo", userInfo);
     if (!userInfo) {
-      return res.status(404).json({ message: "Password or email incorrect" });
+      return res.status(404).json({ message: "Email incorrecto" });
     }
     if (!bcrypt.compareSync(req.body.password, userInfo.password)) {
-      return res.status(404).json({ message: "Password or email incorrect" });
+      return res.status(404).json({ message: "Contraseña incorrecta" });
     }
     const token = generateSign(userInfo._id, userInfo.email);
     return res.status(200).json({ user: userInfo, token: token });

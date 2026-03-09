@@ -8,7 +8,7 @@ const arrayRecipes =
     "name": "Galletas de Avena",
     "description": "Deliciosas galletas de avena ideales para un snack saludable.",
     "ingredients": [
-      { "ingredient": "69654ac33339b6d4cedd7274", "quantity": "1 taza" }
+      { "ingredient": "69654ac33339b6d4cedd7274", "quantity": "1 taza de avena" }
     ],
     "preparations": [
       "Precalienta el horno a 180°C.",
@@ -77,7 +77,7 @@ const arrayRecipes =
     "description": "Una ensalada fresca y saludable con espinacas frescas y aderezo de mostaza.",
     "ingredients": [
       { "ingredient": "69654ac33339b6d4cedd7277", "quantity": "4 tazas de espinacas frescas" },
-      { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1/2 cebolla roja, en rodajas finas" },
+      { "ingredient": "69654ac33339b6d4cedd727f", "quantity": "1/2 cebolla roja, en rodajas finas" },
       { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
       { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1 zanahoria, rallada" },
       { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" }
@@ -97,7 +97,7 @@ const arrayRecipes =
   },
   {
     "name": "Huevos Revueltos",
-    "description": "Huevos revueltos con queso y espinacas.",
+    "description": "Huevos revueltos con queso.",
     "ingredients": [
       { "ingredient": "69654ac33339b6d4cedd7278", "quantity": "4 huevos" },
       { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "50 g de pimiento verde, picado" },
@@ -110,7 +110,7 @@ const arrayRecipes =
       "En una sartén grande, calienta el aceite de oliva a fuego medio-alto.",
       "Añade el ajo picado, el pimiento verde y la zanahoria a la sartén y saltea durante 3-4 minutos.",
       "Agrega los huevos batidos a la sartén y revuelve constantemente hasta que estén cocidos.",
-      "Retira del fuego, añade queso y espinacas, y revuelve hasta que el queso se derrita.",
+      "Retira del fuego, añade queso y revuelve hasta que el queso se derrita.",
       "Sirve los huevos revueltos calientes y disfruta."
     ],
     "categories": ["Desayunos", "Platos Principales"],
@@ -148,11 +148,10 @@ const arrayRecipes =
     "ingredients": [
       { "ingredient": "69654ac33339b6d4cedd727a", "quantity": "2 plátanos maduros" },
       { "ingredient": "69654ac33339b6d4cedd727b", "quantity": "1 taza de nueces" },
-      { "ingredient": "69654ac33339b6d4cedd7283", "quantity": "1 taza de leche" },
       { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" }
     ],
     "preparations": [
-      "En una licuadora, combina los plátanos, las nueces, la leche y el jugo de limón.",
+      "En una licuadora, combina los plátanos, las nueces, 1 taza de leche y el jugo de limón.",
       "Licua hasta obtener una mezcla suave y cremosa.",
       "Sirve el batido de plátano y nueces en un vaso y disfruta."
     ],
@@ -191,7 +190,7 @@ const arrayRecipes =
     "description": "Pechuga de pavo a la parrilla con pimientos y cebolla.",
     "ingredients": [
       { "ingredient": "69654ac33339b6d4cedd727d", "quantity": "2 pechugas de pavo" },
-      { "ingredient": "64f1c05a310dc5167d55719f", "quantity": "1 cebolla, en rodajas" },
+      { "ingredient": "69654ac33339b6d4cedd727f", "quantity": "1 cebolla, en rodajas" },
       { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
       { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
       { "ingredient": "69654ac33339b6d4cedd7287", "quantity": "1 pimiento verde, en tiras" }
@@ -285,7 +284,7 @@ const arrayRecipes =
     "name": "Tostadas de Aguacate",
     "description": "Tostadas de aguacate con huevo y tomate.",
     "ingredients": [
-      { "ingredient": "69654ac33339b6d4cedd727f", "quantity": "4 tostadas de pan integral" },
+      { "ingredient": "68654ac33339b6d4cedd727b", "quantity": "4 tostadas de pan integral" },
       { "ingredient": "69654ac33339b6d4cedd728b", "quantity": "2 aguacates maduros" },
       { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
       { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
@@ -309,7 +308,7 @@ const arrayRecipes =
     "name": "Pasta con Pesto",
     "description": "Pasta con salsa de pesto fresca y queso parmesano.",
     "ingredients": [
-      { "ingredient": "69654ac33339b6d4cedd7283", "quantity": "250 g de pasta" },
+      { "ingredient": "68654ac33339b6d4cedd727b", "quantity": "250 g de pasta" },
       { "ingredient": "69654ac33339b6d4cedd728c", "quantity": "2 tazas de albahaca fresca" },
       { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
       { "ingredient": "64f1c05a310dc5167d5571a7", "quantity": "1/2 taza de queso parmesano rallado" }
@@ -331,7 +330,7 @@ const arrayRecipes =
     "name": "Smoothie de Frutas",
     "description": "Un smoothie refrescante con una mezcla de frutas frescas.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d5571a8", "quantity": "1 plátano" },
+      { "ingredient": "69654ac33339b6d4cedd727a", "quantity": "1 plátano" },
       { "ingredient": "64f1c05a310dc5167d5571a9", "quantity": "1/2 taza de fresas" },
       { "ingredient": "64f1c05a310dc5167d5571aa", "quantity": "1/2 taza de arándanos" },
       { "ingredient": "64f1c05a310dc5167d5571ab", "quantity": "1/2 taza de yogur griego" }
@@ -353,7 +352,7 @@ const arrayRecipes =
     "description": "Pollo al curry con arroz y verduras.",
     "ingredients": [
       { "ingredient": "69654ac33339b6d4cedd7282", "quantity": "4 pechugas de pollo" },
-      { "ingredient": "64f1c05a310dc5167d5571ad", "quantity": "1 cebolla, picada" },
+      { "ingredient": "69654ac33339b6d4cedd727f", "quantity": "1 cebolla, picada" },
       { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" },
       { "ingredient": "64f1c05a310dc5167d5571ae", "quantity": "1 taza de arroz" },
       { "ingredient": "64f1c05a310dc5167d5571af", "quantity": "1 lata de leche de coco" }
@@ -377,7 +376,7 @@ const arrayRecipes =
     "name": "Pasta Alfredo",
     "description": "Pasta Alfredo cremosa con queso parmesano.",
     "ingredients": [
-      { "ingredient": "69654ac33339b6d4cedd7283", "quantity": "250 g de pasta" },
+      { "ingredient": "64f1c05a310dc5167d5571b0", "quantity": "250 g de pasta" },
       { "ingredient": "64f1c05a310dc5167d5571b0", "quantity": "1 taza de queso parmesano rallado" },
       { "ingredient": "64f1c05a310dc5167d5571b1", "quantity": "1 taza de crema espesa" },
       { "ingredient": "69654ac33339b6d4cedd7280", "quantity": "2 dientes de ajo, picados" }
@@ -401,7 +400,7 @@ const arrayRecipes =
     "name": "Ensalada César",
     "description": "Ensalada César clásica con pollo a la parrilla.",
     "ingredients": [
-      { "ingredient": "64f1c05a310dc5167d5571b2", "quantity": "2 pechugas de pollo" },
+      { "ingredient": "69654ac33339b6d4cedd7282", "quantity": "2 pechugas de pollo" },
       { "ingredient": "69654ac33339b6d4cedd7284", "quantity": "1 zanahoria, en rodajas" },
       { "ingredient": "64f1c05a310dc5167d5571b3", "quantity": "2 tazas de lechuga romana, cortada en trozos" },
       { "ingredient": "69654ac33339b6d4cedd7285", "quantity": "1 limón, el jugo" },
