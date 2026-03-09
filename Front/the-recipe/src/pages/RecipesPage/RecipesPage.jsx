@@ -127,7 +127,7 @@ function RecipesPage() {
               Recetas
             </h1>
             <div className="flex mt-6 justify-center">
-              <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+              <div className="w-16 h-1 rounded-full bg-violet-500 inline-flex"></div>
             </div>
           </div>
         </div>
@@ -288,10 +288,10 @@ function RecipesPage() {
                         </p>
                         </div>
                         <div className="flex items-center flex-wrap ">
-                          <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded my-5">
+                          <button className="bg-transparent hover:bg-violet-500 text-violet-500 font-semibold hover:text-white py-2 px-4 border border-violet-500 hover:border-transparent rounded my-5">
                             <Link
                               to={`/recipes/${recipe._id}`}
-                              className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                              className="inline-flex items-center md:mb-2 lg:mb-0"
                             >
                               Detalles
                               <svg

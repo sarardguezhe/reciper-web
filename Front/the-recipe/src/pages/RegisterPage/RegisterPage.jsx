@@ -7,18 +7,31 @@ function UserRegistrationForm() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
-  const [age, setAge] = useState("");
   const navigate = useNavigate();
+
+  const passwordRules = {
+    length: password.length >= 8,
+    uppercase: /[A-Z]/.test(password),
+    lowercase: /[a-z]/.test(password),
+    number: /\d/.test(password),
+    special: /[@$!%*?&.#_-]/.test(password)
+  };
+
+  const isPasswordValid = Object.values(passwordRules).every(Boolean);
 
   const handleRegistration = async (e) => {
     e.preventDefault();
+
+    if (!isPasswordValid) {
+      setMessage("La contraseña no cumple los requisitos.");
+      return;
+    }
 
     try {
       const response = await axiosInstance.post("/user/register", {
         email,
         password,
-        name,
-        age
+        name
       })
 
       if (response.status === 201) {
@@ -54,56 +67,78 @@ function UserRegistrationForm() {
                           <div class="text-center">
                             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Crea una cuenta</h1>
                             <div class="flex mt-6 justify-center">
-                              <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                              <div class="w-16 h-1 rounded-full bg-violet-500 inline-flex"></div>
                             </div>
                           </div>
                         </div>
                       </section>
                     </div>
+
+                    {/* Formulario de registro */}
                       <form onSubmit={handleRegistration}>
+
                         <div class="m-2">NOMBRE</div>
                           <input
                             type="text"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             required
-                            class="border-b m-2  bg-gray-50 focus:outline-none"
+                            class="border-b border-violet-500 m-2  bg-gray-50 focus:outline-none"
                           />
-                        <div class="m-2">EDAD</div>
-                          <input
-                            type="number"
-                            value={age}
-                            onChange={(e) => setAge(e.target.value)}
-                            required
-                            min={0}
-                            max={100}
-                            class="border-b m-2  bg-gray-50  focus:outline-none"
-                          />
+
                         <div class="m-2">EMAIL</div>
                           <input
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
-                            class="border-b m-2  bg-gray-50  focus:outline-none"
+                            class="border-b border-violet-500 m-2  bg-gray-50  focus:outline-none"
                           />
+
                          <div class="m-2">CONTRASEÑA</div>
                           <input
                             type="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
-                            class="border-b m-2  bg-gray-50  focus:outline-none"
+                            class="border-b border-violet-500 m-2  bg-gray-50  focus:outline-none"
                           />
-                      <div class="flex m-2">
+
+                          {/* Requisitos de contraseña */}
+                          <div class="m-2 text-sm">
+                            <div class={passwordRules.length ? "text-green-500" : "text-gray-400"}>
+                              • Mínimo 8 caracteres
+                            </div>
+
+                            <div class={passwordRules.uppercase ? "text-green-500" : "text-gray-400"}>
+                              • Una letra mayúscula
+                            </div>
+
+                            <div class={passwordRules.lowercase ? "text-green-500" : "text-gray-400"}>
+                              • Una letra minúscula
+                            </div>
+
+                            <div class={passwordRules.number ? "text-green-500" : "text-gray-400"}>
+                              • Un número
+                            </div>
+
+                            <div class={passwordRules.special ? "text-green-500" : "text-gray-400"}>
+                              • Un carácter especial (@$!%*?&.#_-)
+                            </div>
+                          </div>
+
+                      <div class="flex my-4">
                         <button 
                         type="submit"
-                        class="bg-gradient-to-l from-fuchsia-600 to-cyan-400 px-6 py-1 rounded-2xl text-white font-medium">
+                        class="w-40 bg-violet-500 hover:bg-orange-400 text-white px-6 py-1 rounded-2xl font-medium">
                           REGISTRARSE
                         </button>
                       </div>
+
                       </form>
-                      {message && <p>{message}</p>}
+
+                      {message && <p className="mb-2 text-red">{message}</p>}
+
                       <a href="/login" class="m-2 hover:text-purple-700">¿Ya tienes una cuenta? Inicia sesión</a>
                     </div>
                   </div>

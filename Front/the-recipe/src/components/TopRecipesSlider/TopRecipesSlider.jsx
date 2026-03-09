@@ -36,7 +36,7 @@ export default function TopRecipesSlider() {
 
   return (
     <>
-      <div className="flex justify-center p-10">
+      <div className="flex justify-center p-10 text-gray-600 body-font">
       <div class="flex flex-col text-center w-full mb-10">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Top Recetas</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Échale un vistazo a las recetas más populares de nuestra comunidad.</p>

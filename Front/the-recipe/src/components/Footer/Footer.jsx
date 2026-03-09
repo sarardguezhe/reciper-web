@@ -17,16 +17,19 @@ export default function Footer() {
         </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
             <li>
-              <a href="https://github.com/pablosierra-dev" className="mr-4 hover:underline md:mr-6">Pablo Sierra</a>
+              <a href="https://github.com/sarardguezhe" className="mr-4 hover:underline md:mr-6">Sara Rodríguez</a>
             </li>
             <li>
               <a href="https://github.com/dayecharry" className="mr-4 hover:underline md:mr-6">Alvaro Cabrera</a>
             </li>
             <li>
-              <a href="https://github.com/sarardguezhe" className="mr-4 hover:underline md:mr-6">Sara Rodríguez</a>
+              <a href="https://github.com/pablosierra-dev" className="mr-4 hover:underline md:mr-6">Pablo Sierra</a>
             </li>
             <li>
               <a href="https://github.com/JuanFelipeCB01" className="hover:underline">Juan Felipe</a>
+            </li>
+            <li>
+              <p className='ml-4'>© Copyright 2023</p>
             </li>
           </ul>
         </div>

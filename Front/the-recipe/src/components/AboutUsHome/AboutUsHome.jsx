@@ -11,7 +11,7 @@ function AboutUsHome() {
   <div class="container px-5 py-24 mx-auto">
   <div class="flex flex-col text-center w-full mb-20">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Bienvenido a Reciper</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Donde cocinar se convierte en una experiencia sencilla, creativa y deliciosa. Aquí encontrarás recetas para todos los gustos y momentos: desde platos rápidos para el día a día hasta propuestas especiales para sorprender en ocasiones únicas.</p>
     </div>
     <div class="flex flex-wrap -m-4">
       <div class="p-2 lg:w-1/3">
@@ -49,8 +49,8 @@ function AboutUsHome() {
         <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
           <img src='https://res.cloudinary.com/dc3pogjef/image/upload/v1693868001/chat_1519760_m43jbr.png'/>
         </div>
-          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Descubre</h1>
-          <p class="leading-relaxed mb-3">Únete a nuestra comunidad de amantes de la cocina y descubre un mundo de posibilidades culinarias en nuestra web. Aquí, encontrarás recetas de todo tipo, desde exquisitos.</p>
+          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Conecta</h1>
+          <p class="leading-relaxed mb-3">Únete a nuestra comunidad de amantes de la cocina y descubre un mundo de posibilidades culinarias en nuestra web. ¡Comparte tu experiencia!</p>
           <button class="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 mt-4 rounded">
           <NavLink to="recipes">
                 Ver más

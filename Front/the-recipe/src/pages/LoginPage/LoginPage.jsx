@@ -50,7 +50,7 @@ const Login = () => {
                           <div className="text-center">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Accede a tu cuenta</h1>
                             <div className="flex mt-6 justify-center">
-                              <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                              <div className="w-16 h-1 rounded-full bg-violet-500 inline-flex"></div>
                             </div>
                           </div>
                         </div>
@@ -63,7 +63,7 @@ const Login = () => {
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           required
-                          className="border-b m-2  bg-gray-50 focus:outline-none"
+                          className="border-b border-violet-500 m-2  bg-gray-50 focus:outline-none"
                         />
 
                         <div className="m-2">CONTRASEÑA</div>
@@ -72,7 +72,7 @@ const Login = () => {
                           value={password}
                           onChange={(e) => setPassword(e.target.value)}
                           required
-                          className="border-b m-2  bg-gray-50  focus:outline-none"
+                          className="border-b border-violet-500 m-2  bg-gray-50  focus:outline-none"
                         />
                       <div className="flex m-2">
                         <input
@@ -84,7 +84,7 @@ const Login = () => {
                       <div className="flex m-2">
                         <button 
                         type="submit"
-                        className="bg-gradient-to-l from-fuchsia-600 to-cyan-400 px-6 py-1 rounded-2xl text-white font-medium">
+                        className="bg-violet-500 hover:bg-orange-400 px-6 py-1 rounded-2xl text-white font-medium">
                           INICIAR SESIÓN
                         </button>
                       </div>

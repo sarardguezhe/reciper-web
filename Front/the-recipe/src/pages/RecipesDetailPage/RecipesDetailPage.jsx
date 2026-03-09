@@ -73,7 +73,7 @@ function RecipeDetailPage() {
               {recipe.name}
             </h1>
             <div class="flex mt-6 justify-center">
-              <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+              <div class="w-16 h-1 rounded-full bg-violet-500 inline-flex"></div>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ function RecipeDetailPage() {
                   <h2 class="font-medium title-font mt-4 text-gray-900 text-lg font-bold">
                     {recipe.chef.name}
                   </h2>
-                  <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                  <div class="w-12 h-1 bg-violet-500 rounded mt-2 mb-4"></div>
                   <p class="text-base my-2.5">{recipe.description}</p>
                   <p class="leading-relaxed text-lg mb-4 underline font-bold">
                     Ingredientes:
@@ -116,10 +116,8 @@ function RecipeDetailPage() {
                         recipe.ingredients?.map((ingredient) => (
                           <>
                             <li className="text-sm">
-                              - {ingredient?.ingredient?.name} Cantidad:{" "}
-                              {ingredient?.quantity}
+                              - {ingredient?.quantity}
                             </li>
-                            {/* <li>Cantidad: {ingredient?.quantity}</li> */}
                           </>
                         ))}
                     </ul>
@@ -159,10 +157,10 @@ function RecipeDetailPage() {
                   </div>
                 )}                
                 
-                  <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded my-5">
+                  <button className="bg-transparent hover:bg-violet-500 text-violet-700 font-semibold hover:text-white py-2 px-4 border border-violet-500 hover:border-transparent rounded my-5">
                     <Link
                       to={`/recipes`}
-                      class="text-indigo-500 inline-flex items-center hover:text-white"
+                      class="inline-flex items-center"
                     >
                       Volver
                       <svg
@@ -198,7 +196,7 @@ function RecipeDetailPage() {
                   Comentarios
                 </h1>
                 <div class="flex mt-6 justify-center">
-                  <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                  <div class="w-16 h-1 rounded-full bg-violet-500 inline-flex"></div>
                 </div>
               </div>
             </div>

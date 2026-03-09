@@ -60,7 +60,7 @@ function IngredientsHome() {
       </div>
               ))}
               <div className='w-full flex justify-center mt-8'>
-              <button class="w-40 bg-violet-500 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded shadow-xl">
+              <button class="w-40 bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded shadow-xl">
               <NavLink to="/ingredients">
                 Ver más
               </NavLink>

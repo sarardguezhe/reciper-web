@@ -55,7 +55,7 @@ export default function CategorySlider({ category }) {
               {category}
             </h1>
             <div className="flex mt-6 justify-center mb-16">
-              <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+              <div className="w-16 h-1 rounded-full bg-violet-500 inline-flex"></div>
             </div>
           </div>
         </div>

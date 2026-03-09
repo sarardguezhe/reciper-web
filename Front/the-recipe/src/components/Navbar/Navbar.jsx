@@ -105,7 +105,7 @@ export default function NavBar() {
                 }`}
                 onClick={closeMenu}
               >
-                Registrate
+                Regístrate
               </NavLink>
               <NavLink
                 to="/login"
@@ -154,30 +154,30 @@ export default function NavBar() {
           }`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col p-4 md:p-0 font-medium rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-violet-500 md:bg-transparent text-white ">
-            <li className=" md:bg-transparent rounded-lg  hover:bg-violet-700">
+          <ul className="flex flex-col p-4 md:p-0 font-medium md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-violet-500 md:bg-transparent text-white ">
+            <li className="bg-transparent px-2 hover:border-b-2 hover:border-violet-700">
               <NavLink to="/" onClick={closeMenu}>
                 Inicio
               </NavLink>
             </li>
-            <li className="bg-transparent rounded-lg  hover:bg-violet-700">
+            <li className="bg-transparent px-2 hover:border-b-2 hover:border-violet-700 active:border-b-2 active:border-orange-700">
               <NavLink to="/recipes" onClick={closeMenu}>
                 Recetas
               </NavLink>
             </li>
-            <li className="bg-transparent rounded-lg  hover:bg-violet-700">
+            <li className="bg-transparent px-2 hover:border-b-2 hover:border-violet-700">
               <NavLink to="/ingredients" onClick={closeMenu}>
                 Ingredientes
               </NavLink>
             </li>
             {auth.isAuthenticated && (
-              <li className="bg-transparent rounded-lg  hover:bg-violet-700">
+              <li className="bg-transparent px-2 hover:border-b-2 hover:border-violet-700">
                 <NavLink to="/profile" onClick={closeMenu}>
                   Perfil
                 </NavLink>{" "}
               </li>
             )}
-            <li className="bg-transparent rounded-lg  hover:bg-violet-700">
+            <li className="bg-transparent px-2 hover:border-b-2 hover:border-violet-700">
               <NavLink to="/contact" onClick={closeMenu}>
                 Contactar
               </NavLink>
@@ -192,14 +192,14 @@ export default function NavBar() {
                 className="md:hidden block px-4 py-2 text-white bg-gradient-to-r from-orange-600 to-orange-600 rounded-md shadow hover:bg-gray-800 transition-all duration-1000 ease-in-out"
                 onClick={closeMenu}
               >
-                Login
+                Accede
               </NavLink>
               <NavLink
                 to="/register"
                 className="md:hidden block px-4 py-2 text-white bg-gradient-to-r from-orange-600 to-orange-600 rounded-md shadow hover:bg-gray-800 transition-all duration-1000 ease-in-out"
                 onClick={closeMenu}
               >
-                Register
+                Regístrate
               </NavLink>
             </div>
           )}

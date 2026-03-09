@@ -44,14 +44,9 @@ function IngredientsDetailPage() {
         const { data } = await axios.get('http://localhost:5020/recipes');
         const filteredRecipes = data.filter((recipe) => {
           return recipe?.ingredients?.some((recipeIngredient) => {
-            // console.log('1', recipeIngredient.ingredient.name)
-            // console.log('2', item.data.name)
-            // console.log('5', recipeIngredient.ingredient.name === item.data.name)
             return recipeIngredient?.ingredient?._id?.toString() === item?.data?._id?.toString();
             })
         });
-
-        console.log('45', filteredRecipes)
         setRecipes(filteredRecipes); 
         
     } catch (error) {
@@ -103,7 +98,7 @@ function IngredientsDetailPage() {
             <div class="text-center">
               <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Recetas con {ingredient?.name}</h1>
               <div class="flex mt-6 justify-center">
-                <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                <div class="w-16 h-1 rounded-full bg-violet-500 inline-flex"></div>
               </div>
             </div>
           </div>
@@ -131,8 +126,8 @@ function IngredientsDetailPage() {
                     <div class="flex items-center flex-wrap ">
                       
 
-                    <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded my-5">
-                        <Link to={`/recipes/${recipe._id}`} class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                    <button className="bg-transparent hover:bg-violet-500 text-violet-500 font-semibold hover:text-white py-2 px-4 border border-violet-500 hover:border-transparent rounded my-5">
+                        <Link to={`/recipes/${recipe._id}`} class="inline-flex items-center md:mb-2 lg:mb-0">
                           Detalles
                           <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"></path>

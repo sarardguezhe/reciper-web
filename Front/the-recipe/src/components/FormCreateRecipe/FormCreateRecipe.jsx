@@ -151,7 +151,7 @@ function FormCreateRecipe() {
             {/* Description */}
               <div class="p-2">
                 <div class="relative">
-                  <label for="email" class="leading-7 text-sm text-gray-600">Description:</label>
+                  <label for="email" class="leading-7 text-sm text-gray-600">Descripción:</label>
                   <input type="text" id="description" name="description" value={description} onChange={(e) => setDescription(e.target.value)} required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
                 </div>
 
@@ -162,7 +162,7 @@ function FormCreateRecipe() {
               <div class="p-2 w-full">
                 <div class="relative">
 
-                  <label for="message" class="leading-7 text-sm text-gray-600">Ingredients:</label>
+                  <label for="message" class="leading-7 text-sm text-gray-600">Ingredientes:</label>
                   {ingredientsList.map((ingredient, index) => (
                   <div key={index}>
                     <select class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" id={`ingredient-${index}`} name={`ingredient-${index}`} value={ingredient} onChange={(e) => {  const newIngredientsList = [...ingredientsList]; newIngredientsList[index] = e.target.value;  setIngredientsList(newIngredientsList); }} required>
@@ -188,7 +188,7 @@ function FormCreateRecipe() {
                 ))}
                 
                 <button type="button" onClick={addIngredient} class="my-1.5 mr-0 flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                  Add Ingredient
+                  Añadir Ingrediente
                 </button>
                 </div>
               </div>
@@ -197,7 +197,7 @@ function FormCreateRecipe() {
               <div class="p-2">
                 <div class="relative">
 
-                  <label for="name" class="leading-7 text-sm text-gray-600">Preparations:</label>
+                  <label for="name" class="leading-7 text-sm text-gray-600">Preparación:</label>
                   {preparationsList.map((preparation, index) => (
                     <div key={index}>
 
@@ -214,7 +214,7 @@ function FormCreateRecipe() {
                   </div>
                 ))}
                 <button type="button" onClick={addPreparation} class="my-1.5 mr-0 flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                  Add Preparation
+                  Añadir Preparación
                 </button>
               </div>
               </div>
@@ -222,7 +222,7 @@ function FormCreateRecipe() {
             {/* Categories */}
               <div class="p-2">
                 <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-gray-600">Categories:</label>
+                  <label for="name" class="leading-7 text-sm text-gray-600">Categorías:</label>
                   {categoriesList.map((category, index) => (
                   <div key={index}>
                     <input type="text" id="category" name="category" value={category} onChange={(e) => {
@@ -238,7 +238,7 @@ function FormCreateRecipe() {
                         </div>
                       ))}
                       <button type="button" onClick={addCategory} class="my-1.5 mr-0 flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                        Add Category
+                        Añadir Categoría
                       </button>
                 </div>
               </div>
@@ -246,7 +246,7 @@ function FormCreateRecipe() {
             {/* Country */}
               <div class="p-2">
                 <div class="relative">
-                <label for="name" class="leading-7 text-sm text-gray-600">Country:</label>
+                <label for="name" class="leading-7 text-sm text-gray-600">Ciudad:</label>
                 <input type="text" id="name" name="name" value={country} onChange={(e) => setCountry(e.target.value)} required class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
                 </div>
               </div>
@@ -270,7 +270,7 @@ function FormCreateRecipe() {
             {/* Image */}
               <div class="p-2">
                 <div class="relative">
-                <label for="name" class="leading-7 text-sm text-gray-600">Image:</label>
+                <label for="name" class="leading-7 text-sm text-gray-600">Imagen:</label>
                 <input type="file" id="name" name="name" value={image} onChange={(e) => setImage(e.target.value)} class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
                 </div>
               </div>

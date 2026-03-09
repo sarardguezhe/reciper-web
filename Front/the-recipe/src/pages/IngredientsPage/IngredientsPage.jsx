@@ -70,17 +70,6 @@ function IngredientsPage() {
         </div>
       </div>
 
-      {/* <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-4">
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="bg-gray-100 p-6 rounded-lg">
-                <CategorySlider category="Fruit" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </>
   );
 }
