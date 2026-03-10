@@ -9,7 +9,7 @@ if (!cached) {
 const connect = async () => {
   if (cached.conn) return cached.conn;
 
-  cached.conn = await mongoose.connect(process.env.MONGO_URI, {
+  cached.conn = await mongoose.connect(process.env.DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
