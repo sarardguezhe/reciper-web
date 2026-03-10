@@ -27,14 +27,15 @@ app.use(cors({
 
 app.use(express.json());
 
+app.use(async (req, res, next) => {
+  await connect();
+  next();
+});
+
 app.use('/recipes', recipeRouter);
 app.use('/ingredients', ingredientRouter);
 app.use('/user', userRouter);
 app.use('/comments', commentsRouter);
 
-app.use(async (req, res, next) => {
-  await connect();
-  next();
-});
 
 module.exports = app;
