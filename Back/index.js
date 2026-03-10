@@ -1,12 +1,12 @@
 //Solo para conexión local:
 
-const app = require('./app');
+// const app = require('./app');
 
-const PORT = 5020 || 5001;
+// const PORT = 5020 || 5001;
 
-app.listen(PORT, () => {
-  console.log(`Listening http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Listening http://localhost:${PORT}`);
+// });
 
 
 //VERSIÓN ANTERIOR SIN ARCHIVO APP.JS:

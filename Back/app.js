@@ -32,6 +32,9 @@ app.use('/ingredients', ingredientRouter);
 app.use('/user', userRouter);
 app.use('/comments', commentsRouter);
 
-connect();
+app.use(async (req, res, next) => {
+  await connect();
+  next();
+});
 
 module.exports = app;
