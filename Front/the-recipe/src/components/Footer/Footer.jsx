@@ -29,7 +29,7 @@ export default function Footer() {
               <a href="https://github.com/JuanFelipeCB01" className="hover:underline">Juan Felipe</a>
             </li>
             <li>
-              <p className='ml-4'>© Copyright 2023</p>
+              <p className='ml-4'>© 2023</p>
             </li>
           </ul>
         </div>
