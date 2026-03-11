@@ -19,8 +19,8 @@ function FormCreateRecipe() {
   const [image, setImage] = useState("");
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5020/ingredients")
+    axiosInstance
+      .get("/ingredients")
       .then((response) => {
         setIngredients(response.data);
       })
@@ -28,8 +28,8 @@ function FormCreateRecipe() {
         console.error("Error al cargar los ingredientes");
       });
 
-    axios
-      .get("http://localhost:5020/user")
+    axiosInstance
+      .get("/user")
       .then((response) => {
         setChefs(response.data);
       })

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { axiosInstance } from "../../utils/axios.js";
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +14,7 @@ export default function CategorySlider({ category }) {
 
   const getIngredients = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5020/ingredients");
+      const { data } = await axiosInstance.get("/ingredients");
       const dataFiltered = data.filter((ingredient) => {
         return ingredient.category === category && ingredient;
       });

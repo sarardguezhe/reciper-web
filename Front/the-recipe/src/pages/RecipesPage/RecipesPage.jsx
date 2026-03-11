@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { axiosInstance } from "../../utils/axios.js";
 import { Link } from "react-router-dom";
 import FormCreateRecipe from "../../components/FormCreateRecipe/FormCreateRecipe";
 import { useAuth } from "../../shared/AuthContext";
@@ -22,7 +22,7 @@ function RecipesPage() {
   const handleLikeClick = async (recipeId) => {
     try {
       // Realiza una solicitud POST a la API para aumentar/disminuir el like
-      const response = await axios.put(`http://localhost:5020/recipes/${recipeId}/like`);
+      const response = await axiosInstance.put(`/recipes/${recipeId}/like`);
   
       // Actualiza el estado de las recetas con la respuesta de la API
       setRecipes((prevRecipes) =>
@@ -45,8 +45,8 @@ function RecipesPage() {
   // Cantidad de recetas por página
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5020/recipes")
+    axiosInstance
+      .get("/recipes")
       .then((response) => {
         setRecipes(response.data);
 

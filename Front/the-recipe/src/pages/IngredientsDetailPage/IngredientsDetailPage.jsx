@@ -1,6 +1,6 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import { axiosInstance } from "../../utils/axios.js";
 import UpdateIngredient from "../../components/UpdateIngredient/UpdateIngredient";
 import { useAuth } from "../../shared/AuthContext";
 
@@ -22,7 +22,7 @@ function IngredientsDetailPage() {
   const handleDeleteIngredient = async (e) => { 
     e.preventDefault();
      try {
-      const response = await axios.delete(`http://localhost:5020/ingredients/${id}`, {   
+      const response = await axiosInstance.delete(`/ingredients/${id}`, {   
       })
       if (response.status === 200) {
         setMessage("Ingredient deleted");
@@ -39,9 +39,9 @@ function IngredientsDetailPage() {
 
   const getRecipes = async () => {
     try {
-        const item = await axios.get(`http://localhost:5020/ingredients/${id}`);
+        const item = await axiosInstance.get(`/ingredients/${id}`);
         setIngredient(item.data);
-        const { data } = await axios.get('http://localhost:5020/recipes');
+        const { data } = await axiosInstance.get('/recipes');
         const filteredRecipes = data.filter((recipe) => {
           return recipe?.ingredients?.some((recipeIngredient) => {
             return recipeIngredient?.ingredient?._id?.toString() === item?.data?._id?.toString();

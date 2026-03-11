@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import { axiosInstance } from "../../utils/axios.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -30,7 +30,7 @@ function RecipeDetailPage() {
   const handleDeleteRecipe = async (e) => { 
     e.preventDefault();
      try {
-      const response = await axios.delete(`http://localhost:5020/recipes/${id}`, {   
+      const response = await axiosInstance.delete(`/recipes/${id}`, {   
       })
       if (response.status === 200) {
         setMessage("Recipe deleted");
@@ -48,7 +48,7 @@ function RecipeDetailPage() {
   useEffect(() => {
     async function fetchRecipe() {
       try {
-        const response = await axios.get(`http://localhost:5020/recipes/${id}`);
+        const response = await axiosInstance.get(`/recipes/${id}`);
         setRecipe(response.data);
         console.log(response.data);
       } catch (error) {

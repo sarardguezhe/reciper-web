@@ -86,11 +86,11 @@ function FormCreateIngredient() {
                     required
                     className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   >
-                    <option>Vegetable</option>
-                    <option>Fruit</option>
-                    <option>Meat</option>
-                    <option>Cereal</option>
-                    <option>Oil</option>
+                    <option>Vegetales</option>
+                    <option>Fruta</option>
+                    <option>Carne</option>
+                    <option>Cereales</option>
+                    <option>Aceites</option>
                   </Form.Select>
                   </div>
                 </div>
@@ -246,126 +246,5 @@ function FormCreateIngredient() {
     </>
   );
 }
-
-// {/* <>
-//   <div>
-//     <h2>Add Ingredient</h2>
-//     <form style={formStyle} onSubmit={handleRegistration}>
-//       {/* Name */}
-//       <div>
-//         <label>Nombre:</label>
-//         <input
-//           type="text"
-//           value={name}
-//           onChange={(e) => setName(e.target.value)}
-//           required
-//         />
-//       </div>
-//       <div>
-//         <label>Categoría:</label>
-//         <Form.Select
-//           aria-label="Default select example"
-//           type="text"
-//           value={category}
-//           onChange={(e) => setCategory(e.target.value)}
-//           required
-//         >
-//           <option>Vegetable</option>
-//           <option>Fruit</option>
-//           <option>Meat</option>
-//           <option>Cereal</option>
-//           <option>Oil</option>
-//         </Form.Select>
-//       </div>
-//       {/* Description */}
-
-//       <div>
-//         <label>Descripción:</label>
-//         <input
-//           type="text"
-//           value={description}
-//           onChange={(e) => setDescription(e.target.value)}
-//           required
-//         />
-//       </div>
-
-//       {/* Energetic Value */}
-//       <div>
-//         <label>Valor energético:</label>
-//         <input
-//           type="text"
-//           value={energeticValue}
-//           onChange={(e) => setEnergeticValue(e.target.value)}
-//           required
-//         />
-//       </div>
-//       {/* Total Fat */}
-//       <div>
-//         <label>Grasas:</label>
-//         <input
-//           type="text"
-//           value={totalFat}
-//           onChange={(e) => setTotalFat(e.target.value)}
-//           required
-//         />
-//       </div>
-//       {/* Saturated Fat */}
-//       <div>
-//         <label>Grasas saturadas:</label>
-//         <input
-//           type="text"
-//           value={saturatedFat}
-//           onChange={(e) => setSaturatedFat(e.target.value)}
-//           required
-//         />
-//       </div>
-//       {/* Carbs */}
-//       <div>
-//         <label>Carbohidratos:</label>
-//         <input
-//           type="text"
-//           value={carbs}
-//           onChange={(e) => setCarbs(e.target.value)}
-//           required
-//         />
-//       </div>
-
-//       {/* Sugars */}
-//       <div>
-//         <label>Azúcares:</label>
-//         <input
-//           type="text"
-//           value={sugars}
-//           onChange={(e) => setSugars(e.target.value)}
-//           required
-//         />
-//       </div>
-//       {/* Sodium */}
-//       <div>
-//         <label>Sodio:</label>
-//         <input
-//           type="text"
-//           value={sodium}
-//           onChange={(e) => setSodium(e.target.value)}
-//           required
-//         />
-//       </div>
-
-//       {/* Image */}
-//       <div>
-//         <label>Imagen:</label>
-//         <input
-//           type="text"
-//           value={image}
-//           onChange={(e) => setImage(e.target.value)}
-//           required
-//         />
-//       </div>
-//       <button type="submit">Register</button>
-//     </form>
-//     {message && <p>{message}</p>}
-//   </div>
-//   );
-// </>; */}
 
 export default FormCreateIngredient;

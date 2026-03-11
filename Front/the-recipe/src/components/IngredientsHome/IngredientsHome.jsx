@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { axiosInstance } from "../../utils/axios.js";
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -6,8 +6,8 @@ function IngredientsHome() {
   const [ingredients, setIngredients] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('http://localhost:5020/ingredients')
+    axiosInstance
+      .get('/ingredients')
       .then((response) => {
         setIngredients(response.data);
         console.log(response.data);
@@ -53,7 +53,7 @@ function IngredientsHome() {
               
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
         <div class=" shadow-xl px-4 py-6 rounded-lg flex flex-col justify-center items-center">
-          <img src={ingredient.image} className='rounded-xl h-24  object-cover'/>
+          <img src={ingredient.image} className='rounded-xl h-24  object-cover' alt={ingredient.name}/>
           <h2 class="title-font font-medium text-xl text-gray-900 mt-2">{ingredient.name}</h2>
           <p class="leading-relaxed">{ingredient.energeticValue}</p>
         </div>

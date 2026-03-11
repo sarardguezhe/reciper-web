@@ -31,7 +31,7 @@ export default function ProfilePage() {
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-2 mb-4"></span>
                 </div>
                 <h2 class="text-gray-900 font-medium title-font tracking-wider text-2xl">{user.name}</h2>
-                <p class="text-gray-500 text-2xl">Edad: {user.age} años</p>
+                {/* <p class="text-gray-500 text-2xl">Edad: {user.age} años</p> */}
                 <p class="text-gray-500 text-2xl">Email: {user.email}</p>
               </div>
             </div>

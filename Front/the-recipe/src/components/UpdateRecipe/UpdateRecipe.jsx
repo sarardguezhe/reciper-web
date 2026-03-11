@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { axiosInstance } from "../../utils/axios.js";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+
 
 
 function UpdateRecipe({recipe}) {
+
     const navigate = useNavigate();
     const [message, setMessage] = useState("");
     const [name, setName] = useState(recipe.name);
@@ -20,8 +21,8 @@ function UpdateRecipe({recipe}) {
     const [image, setImage] = useState(recipe.image);
  
     useEffect(() => {
-        axios
-          .get("http://localhost:5020/ingredients")
+        axiosInstance
+          .get("/ingredients")
           .then((response) => {
             setIngredients(response.data);
           })
@@ -29,8 +30,8 @@ function UpdateRecipe({recipe}) {
             console.error("Error al cargar los ingredientes");
           });
     
-        axios
-          .get("http://localhost:5020/user")
+        axiosInstance
+          .get("/user")
           .then((response) => {
             setChefs(response.data);
           })
@@ -96,7 +97,7 @@ function UpdateRecipe({recipe}) {
         })
       );
 
-      const response = await axios.put(`http://localhost:5020/recipes/${recipe._id}`, {
+      const response = await axiosInstance.put(`/recipes/${recipe._id}`, {
         name,
         description,
         country,

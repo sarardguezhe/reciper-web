@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { axiosInstance } from "../../utils/axios.js";
+import { Link } from "react-router-dom";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
-import axios from "axios";
-import { Link } from "react-router-dom";
+
 
 const customStyles = `
   .swiper-container {
@@ -23,8 +25,8 @@ export default function TopRecipesSlider() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5020/recipes")
+    axiosInstance
+      .get("/recipes")
       .then((response) => {
         setRecipes(response.data);
         console.log(response.data);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router';
 import { axiosInstance } from '../../utils/axios';
-import axios from 'axios';
+
 
 export default function UpdateIngredient({ingredient}) {
     const  { id } = useParams;
@@ -24,7 +24,7 @@ export default function UpdateIngredient({ingredient}) {
     
         try {
             console.log(id)
-          const response = await axios.put(`http://localhost:5020/ingredients/${ingredient._id}`, {
+          const response = await axiosInstance.put(`/ingredients/${ingredient._id}`, {
             name,
             description,
             category,
