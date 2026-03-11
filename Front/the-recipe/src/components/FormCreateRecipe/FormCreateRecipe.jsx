@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { axiosInstance } from "../../utils/axios.js";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+
 
 function FormCreateRecipe() {
   const navigate = useNavigate();

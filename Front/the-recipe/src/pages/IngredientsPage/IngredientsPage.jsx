@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import FormCreateIngredient from "../../components/FormCreateIngredient/FormCreateIngredient";
 import CategorySlider from "../../components/CategorySlider/CategorySlider";
 import { useAuth } from "../../shared/AuthContext";
