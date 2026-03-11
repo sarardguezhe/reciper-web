@@ -1,49 +1,52 @@
 const mongoose = require("mongoose");
+// const dotenv = require('dotenv').config();
 
-let cached = global.mongoose;
-
-if (!cached) {
-  cached = global.mongoose = { conn: null };
-}
+const DB_URL= process.env.DB_URI;
 
 const connect = async () => {
-  if (cached.conn) return cached.conn;
 
-  cached.conn = await mongoose.connect(process.env.DB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  });
+  try {
 
-  return cached.conn;
+    const db = await mongoose.connect(DB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+
+    const { name, host } = db.connection;
+
+    console.log(`Connect to: ${name} DB. Host: ${host}`);
+
+  } catch (error) {
+
+    console.log(`Error connecting the DB: ${error}`);
+
+  }
 };
 
 module.exports = { connect };
 
 
 
-// const mongoose = require('mongoose');
-// const dotenv = require('dotenv').config();
 
-// const DB_URL= process.env.DB_URI;
+// OPCIÓN CACHEADA:
+
+// const mongoose = require('mongoose');
+
+//let cached = global.mongoose;
+
+// if (!cached) {
+//   cached = global.mongoose = { conn: null };
+// }
 
 // const connect = async () => {
+//   if (cached.conn) return cached.conn;
 
-//   try {
+//   cached.conn = await mongoose.connect(process.env.DB_URI, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+//   });
 
-//     const db = await mongoose.connect(DB_URL, {
-//       useNewUrlParser: true,
-//       useUnifiedTopology: true,
-//     });
-
-//     const { name, host } = db.connection;
-
-//     console.log(`Connect to: ${name} DB. Host: ${host}`);
-
-//   } catch (error) {
-
-//     console.log(`Error connecting the DB: ${error}`);
-
-//   }
+//   return cached.conn;
 // };
 
 // module.exports = { connect };
