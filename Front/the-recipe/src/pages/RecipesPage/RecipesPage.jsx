@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { axiosInstance } from "../../utils/axios.js";
 import { Link } from "react-router-dom";
 import FormCreateRecipe from "../../components/FormCreateRecipe/FormCreateRecipe";
@@ -22,7 +22,7 @@ function RecipesPage() {
   const handleLikeClick = async (recipeId) => {
     try {
       // Realiza una solicitud POST a la API para aumentar/disminuir el like
-      const response = await axiosInstance.put(`/recipes/${recipeId}/like`);
+      await axiosInstance.put(`/recipes/${recipeId}/like`);
   
       // Actualiza el estado de las recetas con la respuesta de la API
       setRecipes((prevRecipes) =>

@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 function UpdateRecipe({recipe}) {
 
     const navigate = useNavigate();
-    const [message, setMessage] = useState("");
+    const [ , setMessage] = useState("");
     const [name, setName] = useState(recipe.name);
     const [description, setDescription] = useState(recipe.description);
     const [preparationsList, setPreparationsList] = useState([recipe.preparations]);

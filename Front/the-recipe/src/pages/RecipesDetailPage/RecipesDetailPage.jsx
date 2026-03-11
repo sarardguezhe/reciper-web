@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { axiosInstance } from "../../utils/axios.js";
 import { useAuth } from "../../shared/AuthContext";
@@ -21,7 +21,7 @@ function RecipeDetailPage() {
   const [recipe, setRecipe] = useState(null);
   const auth = useAuth();
   const { user } = useAuth();
-  const [ message, setMessage ] = useState();
+  const [ , setMessage ] = useState();
   const navigate = useNavigate();
   const [displayForm, setDisplayForm] = useState(false);
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { axiosInstance } from "../../utils/axios.js";
 import UpdateIngredient from "../../components/UpdateIngredient/UpdateIngredient";
@@ -8,7 +8,7 @@ function IngredientsDetailPage() {
   const auth = useAuth()
   const { user } = useAuth()
   const navigate = useNavigate()
-  const [message, setMessage] = useState("");
+  const [ , setMessage] = useState("");
 
   const { id } = useParams();
   const [ingredient, setIngredient] = useState();

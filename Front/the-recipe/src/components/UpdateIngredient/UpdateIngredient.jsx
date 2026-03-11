@@ -15,7 +15,7 @@ export default function UpdateIngredient({ingredient}) {
     const [sugars, setSugars] = useState(ingredient.sugars);
     const [sodium, setSodium] = useState(ingredient.sodium);
     const [image, setImage] = useState(ingredient.image);
-    const [message, setMessage] = useState();
+    const [ , setMessage] = useState();
 
     const navigate = useNavigate();
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { axiosInstance } from "../../utils/axios.js";
 import { useNavigate } from "react-router-dom";
 import Form from "react-bootstrap/Form";
@@ -14,7 +14,7 @@ function FormCreateIngredient() {
   const [sugars, setSugars] = useState("");
   const [sodium, setSodium] = useState("");
   const [image, setImage] = useState("");
-  const [message, setMessage] = useState("");
+  const [ , setMessage] = useState("");
 
   const navigate = useNavigate();
 

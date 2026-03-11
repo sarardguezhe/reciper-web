@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function FormCreateRecipe() {
   const navigate = useNavigate();
-  const [message, setMessage] = useState("");
+  const [ , setMessage] = useState("");
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [preparationsList, setPreparationsList] = useState([""]);
