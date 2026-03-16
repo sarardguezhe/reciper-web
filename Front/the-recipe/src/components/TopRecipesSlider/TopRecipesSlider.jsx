@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { axiosInstance } from "../../utils/axios.js";
 import { Link } from "react-router-dom";
 
+import TopRecipeSkeleton from "./TopRecipeSkeleton.jsx";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -22,19 +24,28 @@ const customStyles = `
 `;
 
 export default function TopRecipesSlider() {
-  const [recipes, setRecipes] = useState([]);
 
-  useEffect(() => {
-    axiosInstance
-      .get("/recipes")
-      .then((response) => {
-        setRecipes(response.data);
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.error("Error al obtener las recetas:", error);
-      });
+  const [recipes, setRecipes] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+    const getRecipes = async () => {
+    try {
+      setLoading(true);
+
+      const { data } = await axiosInstance.get("/recipes");
+      setRecipes(data);
+
+    } catch (error) {
+      console.error("Error al obtener las recetas:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+    useEffect(() => {
+    getRecipes();
   }, []);
+
 
   return (
     <>
@@ -53,10 +64,13 @@ export default function TopRecipesSlider() {
             modules={[EffectCards]}
             className="mySwiper"
           >
-          
-        
               
-            {recipes
+            {loading? Array.from({ length: 5 }).map((_, i) => (
+                  <SwiperSlide key={i}>
+                    <TopRecipeSkeleton />
+                  </SwiperSlide>
+                ))
+            : recipes
               .sort((a, b) => b.likes - a.likes)
               .slice(0, 5)
               .map((recipe) => (

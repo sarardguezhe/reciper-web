@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { axiosInstance } from "../../utils/axios.js";
 import { Link } from "react-router-dom";
+
+import IngredientCardSkeleton from "./IngredientCardSkeleton.jsx";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,16 +13,28 @@ import { Navigation } from "swiper/modules";
 export default function CategorySlider({ category }) {
 
   const [ingredients, setIngredients] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  //Constantes para la gestión individual de los botones de navegación de los Sliders
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   const getIngredients = async () => {
     try {
+      setLoading(true);
+
       const { data } = await axiosInstance.get("/ingredients");
+
       const dataFiltered = data.filter((ingredient) => {
         return ingredient.category === category && ingredient;
       });
+
       setIngredients(dataFiltered);
+
     } catch (error) {
       console.error("Getting ingredients failed");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -43,11 +57,11 @@ export default function CategorySlider({ category }) {
 
       <div className="relative">
 
-          <button className="custom-prev absolute left-24 top-1/2 -translate-y-1/4">
+          <button ref={prevRef} className="absolute left-24 top-1/2 -translate-y-1/4">
             <img src="/icons8-arrow-60-l.png" alt="flecha izquierda"/>
           </button>
 
-          <button className="custom-next absolute right-24 top-1/2 -translate-y-1/2">
+          <button ref={nextRef} className="absolute right-24 top-1/2 -translate-y-1/2">
             <img src="/icons8-arrow-60-r.png" alt="flecha derecha"/>
           </button>
 
@@ -62,13 +76,26 @@ export default function CategorySlider({ category }) {
               }}
             spaceBetween={30}
             navigation={{
-                nextEl: ".custom-next",
-                prevEl: ".custom-prev",
+                nextEl: nextRef.current,
+                prevEl: prevRef.current,
               }}
+            //Gestión individual de los botones de navegación de los sliders
+            onInit={(swiper) => {
+              swiper.params.navigation.prevEl = prevRef.current;
+              swiper.params.navigation.nextEl = nextRef.current;
+              swiper.navigation.init();
+              swiper.navigation.update();
+            }}
             modules={[Navigation]}
           >
-            {ingredients?.map((ingredient) => (
-              <SwiperSlide>
+
+          {loading? Array.from({ length: 3 }).map((_, i) => (
+                <SwiperSlide key={i}>
+                  <IngredientCardSkeleton />
+                </SwiperSlide>
+              ))
+          :ingredients?.map((ingredient) => (
+              <SwiperSlide key={ingredient._id}>
                 <Link
                   to={`/ingredients/${ingredient._id}`}
                   className="object-contain shadow-xl"

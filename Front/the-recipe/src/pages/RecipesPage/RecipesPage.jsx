@@ -1,17 +1,23 @@
-import { useEffect, useState } from "react";
-import { axiosInstance } from "../../utils/axios.js";
+import { useState } from "react";
+import useRecipes from "../../hooks/useRecipes.js";
 import { Link } from "react-router-dom";
+import RecipeCardSkeleton from "./RecipeCardSkeleton.jsx";
 import FormCreateRecipe from "../../components/FormCreateRecipe/FormCreateRecipe";
 import { useAuth } from "../../shared/AuthContext";
 
 function RecipesPage() {
-  const [recipes, setRecipes] = useState([]);
+
+  const { recipes, uniqueCategories, loading, error } = useRecipes();
+
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [uniqueCategories, setUniqueCategories] = useState([]);
+
   const [currentPage, setCurrentPage] = useState(1);
   const recipesPerPage = 9;
+
+  const auth = useAuth();
+  const { user } = useAuth();
 
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
 
@@ -19,46 +25,24 @@ function RecipesPage() {
     setMostrarFormulario(!mostrarFormulario);
   };
 
-  const handleLikeClick = async (recipeId) => {
-    try {
-      // Realiza una solicitud POST a la API para aumentar/disminuir el like
-      await axiosInstance.put(`/recipes/${recipeId}/like`);
+  // const handleLikeClick = async (recipeId) => {
+  //   try {
+  //     // Realiza una solicitud POST a la API para aumentar/disminuir el like
+  //     await axiosInstance.put(`/recipes/${recipeId}/like`);
   
-      // Actualiza el estado de las recetas con la respuesta de la API
-      setRecipes((prevRecipes) =>
-        prevRecipes.map((recipe) =>
-          recipe._id === recipeId
-            ? { ...recipe, likes: recipe.likes + 1 } // Sumar 1 al valor actual de likes
-            : recipe
-        )
-      );
-    } catch (error) {
-      console.error("Error al actualizar los likes:", error);
-    }
-  };
+  //     // Actualiza el estado de las recetas con la respuesta de la API
+  //     setRecipes((prevRecipes) =>
+  //       prevRecipes.map((recipe) =>
+  //         recipe._id === recipeId
+  //           ? { ...recipe, likes: recipe.likes + 1 } // Sumar 1 al valor actual de likes
+  //           : recipe
+  //       )
+  //     );
+  //   } catch (error) {
+  //     console.error("Error al actualizar los likes:", error);
+  //   }
+  // };
 
-  
-
-  const auth = useAuth();
-  const { user } = useAuth();
-
-  // Cantidad de recetas por página
-
-  useEffect(() => {
-    axiosInstance
-      .get("/recipes")
-      .then((response) => {
-        setRecipes(response.data);
-
-        // Extraer categorías únicas de las recetas
-        const categories = response.data.map((recipe) => recipe.categories);
-        const uniqueCategories = [...new Set(categories.flat())];
-        setUniqueCategories(uniqueCategories.sort()); // Ordenar alfabéticamente
-      })
-      .catch((error) => {
-        console.error("Error al obtener las recetas:", error);
-      });
-  }, []);
 
   // Función para manejar la selección de categorías
   const handleCategorySelection = (category) => {
@@ -117,6 +101,8 @@ function RecipesPage() {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  if (error) return <p>Error cargando recetas</p>;
 
   return (
     <>
@@ -260,7 +246,11 @@ function RecipesPage() {
         <section className="text-gray-600 body-font">
           <div className="container px-5 pt-8 mx-auto">
             <div className="flex flex-wrap -m-4">
-              {currentRecipes.length ? ( currentRecipes.map((recipe) => (
+              {loading ? (
+                  Array.from({ length: 6 }).map((_, i) => (
+                  <RecipeCardSkeleton key={i} />
+                  ))
+              ) : currentRecipes.length ? ( currentRecipes.map((recipe) => (
                   <div
                     className="p-4 md:w-1/2 lg:w-1/3 w-full"
                     key={recipe._id}
@@ -309,7 +299,7 @@ function RecipesPage() {
                             </Link>
                           </button>
                           <button
-                        onClick={() => handleLikeClick(recipe._id)}
+                        // onClick={() => handleLikeClick(recipe._id)}
                         className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
                       >
                         <svg
