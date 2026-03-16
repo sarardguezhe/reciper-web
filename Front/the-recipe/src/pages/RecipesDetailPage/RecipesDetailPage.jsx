@@ -211,9 +211,9 @@ function RecipeDetailPage() {
           modules={[EffectCards]}
           className="mySwiper"
         >
-          {recipe.comments.length &&
+          {recipe.comments?.length > 0 ? (
             recipe.comments?.map((comment) => (
-              <SwiperSlide key={recipe._id}>
+              <SwiperSlide key={comment._id}>
                 <section className="text-gray-600 body-font">
                   <div className="container px-5 mx-auto">
                     <div className="flex justify-center flex-wrap -m-4">
@@ -253,7 +253,12 @@ function RecipeDetailPage() {
                   </div>
                 </section>
               </SwiperSlide>
-            ))}
+            ))
+            ) : (
+              <div className="text-center text-gray-400 py-10 italic">
+                Sé el primero en comentar esta receta 🍽️
+              </div>
+            )}
         </Swiper>
       </>
     </>
