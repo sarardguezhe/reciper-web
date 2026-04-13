@@ -1,6 +1,5 @@
 const { default: mongoose } = require("mongoose");
 const Recipe = require("../api/models/recipes.models");
-const dotenv = require("dotenv").config();
 
 const arrayRecipes = 
 [

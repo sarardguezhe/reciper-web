@@ -1,6 +1,6 @@
 const { default: mongoose } = require("mongoose");
 const Ingredient = require("../api/models/ingredients.models");
-const dotenv = require('dotenv').config();
+
 
 const arrayIngredients = 
 [
@@ -372,4 +372,4 @@ mongoose.connect(DB_URI)
     console.log("ingredients insert correctly");
 })
 .catch((error) => console.log("error inserting ingredients", error))
-.finally(()=> mongoose.disconnect())
+.finally(()=> mongoose.disconnect());

@@ -1,1 +1,1 @@
-//funcion para elemento archivo a cloudinary
+//funcion para eliminar archivo de cloudinary

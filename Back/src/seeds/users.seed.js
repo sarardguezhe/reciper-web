@@ -1,6 +1,5 @@
 const { default: mongoose } = require("mongoose");
 const User = require("../api/models/users.models");
-const dotenv = require('dotenv').config();
 
 const arrayUsers = [
     {

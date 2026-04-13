@@ -1,6 +1,6 @@
 const { default: mongoose } = require("mongoose");
 const Comment = require("../api/models/comments.models");
-const dotenv = require('dotenv').config();
+
 
 const arrayComments = [
     {
@@ -27,4 +27,4 @@ mongoose.connect(DB_URI)
     console.log("comments insert correctly");
 })
 .catch((error) => console.log("error inserting comments", error))
-.finally(()=> mongoose.disconnect())
+.finally(()=> mongoose.disconnect());

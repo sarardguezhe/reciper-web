@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-// const dotenv = require('dotenv').config();
+
 
 const DB_URL= process.env.DB_URI;
 
@@ -20,33 +20,7 @@ const connect = async () => {
 
     console.log(`Error connecting the DB: ${error}`);
 
-  }
+  };
 };
 
 module.exports = { connect };
-
-
-
-
-// OPCIÓN CACHEADA:
-
-// const mongoose = require('mongoose');
-
-//let cached = global.mongoose;
-
-// if (!cached) {
-//   cached = global.mongoose = { conn: null };
-// }
-
-// const connect = async () => {
-//   if (cached.conn) return cached.conn;
-
-//   cached.conn = await mongoose.connect(process.env.DB_URI, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-//   });
-
-//   return cached.conn;
-// };
-
-// module.exports = { connect };

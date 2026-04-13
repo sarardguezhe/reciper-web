@@ -11,8 +11,8 @@ userRouter.get("/:id", isAuth, profile);
 
 userRouter.get("/", getUsers);
 userRouter.delete("/:id", isAdmin, deleteUser);
-userRouter.put("/:id", isAuth, updateUser)
-userRouter.put("/recipes/:id", isAuth, addToUser)
+userRouter.put("/:id", isAuth, updateUser);
+userRouter.put("/recipes/:id", isAuth, addToUser);
 
 
 module.exports = userRouter;

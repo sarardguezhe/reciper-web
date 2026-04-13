@@ -8,6 +8,6 @@ recipeRouter.get("/", getRecipes);
 recipeRouter.get("/:id", getRecipeById);
 recipeRouter.post("/", postRecipe);
 recipeRouter.put("/:id", updateRecipe);
-recipeRouter.delete("/:id", deleteRecipe)
+recipeRouter.delete("/:id", deleteRecipe);
 
 module.exports = recipeRouter;

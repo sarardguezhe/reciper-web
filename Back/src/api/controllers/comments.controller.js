@@ -18,7 +18,7 @@ const postComments = async (req, res) => {
     } catch (error) {
       return res.status(500).json(error);
     }
-  };
+};
 
   const updateComments = async (req, res) => {
     try {
@@ -35,7 +35,7 @@ const postComments = async (req, res) => {
     } catch (error) {
       return res.status(500).json(error);
     }
-  };
+};
 
   const deleteComments = async (req, res) => {
     try {
@@ -48,6 +48,6 @@ const postComments = async (req, res) => {
     } catch (error) {
       return res.status(500).json(error);
     }
-  };
+};
 
 module.exports = { getComments, postComments, updateComments, deleteComments };

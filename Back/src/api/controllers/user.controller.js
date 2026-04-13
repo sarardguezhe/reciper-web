@@ -68,7 +68,7 @@ const getUsers = async (req, res) => {
     } catch (error) {
       return res.status(500).json(error);
     }
-  };
+};
 
 const deleteUser = async (req, res) =>{
     try {
@@ -81,7 +81,7 @@ const deleteUser = async (req, res) =>{
     } catch (error) {
       return res.status(500).json(error)
     }
-  }
+};
 
 const updateUser = async (req, res) => {
     try {
@@ -103,9 +103,9 @@ const updateUser = async (req, res) => {
     } catch (error) {
       return res.status(500).json(error);
     }
-  };
+};
 
-  const addToUser = async (req, res) => {
+const addToUser = async (req, res) => {
     
   try {
     const { recipeId } = req.params;
@@ -121,13 +121,10 @@ const updateUser = async (req, res) => {
       { new: true }
     );
 
-    // Registro de éxito
     console.log("Usuario actualizado con éxito");
-
     return res.status(200).json(user);
+
   } catch (error) {
-    
-    // Registro de error
     console.error("Error al actualizar el usuario:", error);
     return res.status(500).json(error);
   }
