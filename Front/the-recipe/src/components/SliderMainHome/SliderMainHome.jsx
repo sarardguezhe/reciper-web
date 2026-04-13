@@ -1,14 +1,14 @@
 
-// Import Swiper React components
+// Importa los componentes Swiper de React
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+// Importa los estilos para el slider Swiper
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// import required modules
+// Importa módulos requeridos
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 
@@ -67,7 +67,7 @@ export default function App() {
             />
           </video>
         </SwiperSlide>
-        {/* Agrega más diapositivas de video según sea necesario */}
+        {/* Se pueden agregar más diapositivas de video según sea necesario */}
       </Swiper>
     </div>
   );

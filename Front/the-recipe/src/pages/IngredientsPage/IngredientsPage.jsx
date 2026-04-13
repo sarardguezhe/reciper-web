@@ -24,6 +24,8 @@ function IngredientsPage() {
             <div className="flex mt-6 justify-center"></div>
           </div>
         </div>
+
+        {/* Autenticación de Admin para mostrar formulario que añade ingredientes */}
         {auth.isAuthenticated && user.role === "admin" && (
           <section className="text-gray-600 body-font">
             <div className="container px-5 mx-auto">
@@ -42,6 +44,7 @@ function IngredientsPage() {
           </div>
         )}
 
+        {/* Sliders que muestran los ingredientes agrupados por categoría */}
           <CategorySlider category="Vegetales" />
           <CategorySlider category="Fruta" />
           <CategorySlider category="Cereales" />
