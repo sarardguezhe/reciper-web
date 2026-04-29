@@ -22,14 +22,14 @@ export default function App() {
   const swiperContainerStyle = {
     width: "100%",
     margin: "0 auto",
-    clipPath: "ellipse(100% 55% at 40% 44%)",
+    clipPath: "ellipse(120% 60% at 50% 40%)",
+    WebkitClipPath: "ellipse(120% 60% at 50% 40%)",
     overflow: "hidden",
   };
 
   return (
     <div style={swiperContainerStyle}>
       <Swiper
-        spaceBetween={30}
         centeredSlides={true}
         effect={'fade'}
         autoplay={{
@@ -41,10 +41,9 @@ export default function App() {
         }}
         navigation
         modules={[EffectFade, Navigation, Pagination, Autoplay]}
-        className="mySwiper"
       >
         <SwiperSlide>
-          <video autoPlay muted loop style={videoStyle} className="video-slide">
+          <video autoPlay muted loop style={videoStyle}>
             <source
               src="https://res.cloudinary.com/dc3pogjef/video/upload/v1693791075/Anuncio_para_Redes_Asia%CC%81tico_Restaurante_Entrega_a_Domicilio_8_igxllh.mp4"
               type="video/mp4"
@@ -52,7 +51,7 @@ export default function App() {
           </video>
         </SwiperSlide>
         <SwiperSlide>
-          <video autoPlay muted loop style={videoStyle} className="video-slide">
+          <video autoPlay muted loop style={videoStyle}>
             <source
               src="https://res.cloudinary.com/dc3pogjef/video/upload/v1693791075/Anuncio_para_Redes_Asia%CC%81tico_Restaurante_Entrega_a_Domicilio_7_clwjri.mp4"
               type="video/mp4"
@@ -60,7 +59,7 @@ export default function App() {
           </video>
         </SwiperSlide>
         <SwiperSlide>
-          <video autoPlay muted loop style={videoStyle} className="video-slide">
+          <video autoPlay muted loop style={videoStyle}>
             <source
               src="https://res.cloudinary.com/dc3pogjef/video/upload/v1693791074/Anuncio_para_Redes_Asia%CC%81tico_Restaurante_Entrega_a_Domicilio_6_fbzmhp.mp4"
               type="video/mp4"
